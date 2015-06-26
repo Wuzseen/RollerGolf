@@ -111,7 +111,7 @@ MonoBehaviour:
     projection: 0
     orthographicSize: 10
     orthographicPixelsPerMeter: 64
-    orthographicOrigin: 0
+    orthographicOrigin: 1
     orthographicType: 0
     transparencySortMode: 0
     fieldOfView: 60
