@@ -11,4 +11,10 @@ public class Hole : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if(other.CompareTag(GameConsts.TAG_BALL)) {
+
+		}
+	}
 }
