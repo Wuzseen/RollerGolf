@@ -601,23 +601,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 497494, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 184976, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
       propertyPath: m_Name
       value: trackScaffold
-      objectReference: {fileID: 0}
-    - target: {fileID: 6148974, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
-      propertyPath: m_Offset.y
-      value: -.449999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 485420, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 485420, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e71c44059283aa4c8bcab7101966532, type: 2}
@@ -668,23 +656,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19004c010975eb5488d48aa6521d5d6b, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1451453433 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 158146, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
-  m_PrefabInternal: {fileID: 1854890328}
---- !u!58 &1451453434
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1451453433}
-  m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: a0cd76e1b2329104fbc0fb8f383bb3aa, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: .25
 --- !u!1001 &1854890328
 Prefab:
   m_ObjectHideFlags: 0
@@ -722,26 +693,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431334, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5008814, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5008814, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
-      propertyPath: m_Mass
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5008814, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5008814, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5889582, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50b6c7954f1965649b322dada2498ee2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1893258859
