@@ -5,7 +5,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 3
+  serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1002 &100001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -30,6 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1002 &400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -41,8 +42,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 1}
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   version: 3
   materialIdsValid: 1
   needMaterialInstance: 0
@@ -67,6 +69,11 @@ MonoBehaviour:
     - {x: .574214816, y: .00390820298}
     - {x: .00781640597, y: .499998033}
     - {x: .574214816, y: .499998033}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
     materialId: 0
@@ -80,6 +87,7 @@ MonoBehaviour:
     complexGeometry: 0
     physicsEngine: 0
     colliderType: 0
+    customColliders: []
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -108,6 +116,11 @@ MonoBehaviour:
     - {x: .734371066, y: .00390820298}
     - {x: .683597684, y: .212888673}
     - {x: .734371066, y: .212888673}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
     materialId: 0
@@ -121,6 +134,7 @@ MonoBehaviour:
     complexGeometry: 0
     physicsEngine: 0
     colliderType: 0
+    customColliders: []
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -149,6 +163,11 @@ MonoBehaviour:
     - {x: .750003934, y: .0449199229}
     - {x: .976558566, y: .00390820298}
     - {x: .976558566, y: .0449199229}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
     materialId: 0
@@ -162,6 +181,7 @@ MonoBehaviour:
     complexGeometry: 0
     physicsEngine: 0
     colliderType: 0
+    customColliders: []
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -190,6 +210,11 @@ MonoBehaviour:
     - {x: .667964816, y: .00390820298}
     - {x: .589847684, y: .208982423}
     - {x: .667964816, y: .208982423}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
     materialId: 0
@@ -203,6 +228,7 @@ MonoBehaviour:
     complexGeometry: 0
     physicsEngine: 0
     colliderType: 0
+    customColliders: []
     colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -216,8 +242,9 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
   textures:
-  - {fileID: 2800000, guid: 657c06b4a37f4bb45a24cc96727be5b8, type: 1}
+  - {fileID: 2800000, guid: 657c06b4a37f4bb45a24cc96727be5b8, type: 3}
   pngTextures: []
+  materialPngTextureId: 00000000
   textureFilterMode: 1
   textureMipMaps: 0
   allowMultipleAtlases: 0
@@ -227,7 +254,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1976229422
+  buildKey: 1845242215
   dataGuid: 822f1f9eedf119f4eaca33509ba7b549
   managedSpriteCollection: 0
   hasPlatformData: 0
@@ -247,7 +274,6 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
-  m_IsExploded: 1
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
