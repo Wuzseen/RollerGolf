@@ -700,16 +700,19 @@ MonoBehaviour:
     - golfBall
     - trackScaffold
     - basicRamp
+    - ground
     spriteTextureGUIDs:
     - ec49f2ce851d043b3a26ce6008782b7c
     - a001f40a49784d24bb9b9dd69f4e9dda
     - 3cd995477d25152488252863ac33d868
     - 6aead720af355dc418260898eecd9625
+    - 30d03495c232040f9bf3f27dacf1418c
     spriteTextureTimeStamps:
-    - 1435323252.33024
-    - 1435316903.11008
-    - 1435319157.50003
-    - 1435319416.10982
+    - 1435333306
+    - 1435330955
+    - 1435330955
+    - 1435330955
+    - 1435334189
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
