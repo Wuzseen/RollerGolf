@@ -70,6 +70,9 @@ public class CourseHandler : MonoBehaviour {
 		print ("Hole end");
 	}
 
+	public void ConfirmPlacement() {
+		state = State.Other;
+	}
 
 	IEnumerator PlacementPhase () {
 		state = State.Placing;

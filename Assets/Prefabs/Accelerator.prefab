@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21210748}
   - 114: {fileID: 11417866}
   - 61: {fileID: 6185350}
+  - 114: {fileID: 11408948}
   m_Layer: 0
   m_Name: Accelerator
   m_TagString: Untagged
@@ -43,6 +44,19 @@ BoxCollider2D:
   m_Offset: {x: 2, y: .5}
   serializedVersion: 2
   m_Size: {x: 4, y: 1}
+--- !u!114 &11408948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901d4f838fb994f4080a02e477c27ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationDegree: 10
+  placing: 0
 --- !u!114 &11417866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +104,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: m_Delegates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -97,6 +119,18 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rotationDegree
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: placing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 186682}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 186682}

@@ -33,6 +33,7 @@ public class AddObjectGUIHandler : MonoBehaviour {
 	{
 		GameObject spawnedObject = (GameObject)Instantiate(myGameObject);
 		spawnedObject.transform.SetParent(GameObject.Find ("Mouse Follower").transform,false);
+		spawnedObject.GetComponent<ObjectPlacement>().beginPlacing();
 	}
 
 
