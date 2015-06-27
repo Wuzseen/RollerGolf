@@ -61,7 +61,6 @@ public class CameraController : MonoBehaviour {
 	}
 
 	void ResetCamera() {
-		print ("RESET");
 		StartCoroutine(CamReset());
 	}
 

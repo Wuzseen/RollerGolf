@@ -9,6 +9,15 @@ public class ScoreCard : MonoBehaviour {
 	public Text courseField;
 
 	private CourseData course;
+
+	private int activeHole = 0;
+
+	private List<HoleData> holes {
+		get {
+			return course.Holes;
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
 		course = Game.SelectedCourse;
@@ -17,19 +26,13 @@ public class ScoreCard : MonoBehaviour {
 	}
 
 	void SetUp() {
-		for(int i = 0; i < course.Holes.Count; i++) {
-			print (course.Holes[i]);
+		for(int i = 0; i < holes.Count; i++) {
 			ScoreColumn column = scoreColumns[i];
-			column.LoadHoleData(course.Holes[i],i + 1);
+			column.LoadHoleData(holes[i],i + 1);
 		}
 	}
 
 	public void UpdateScores() {
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

@@ -8,20 +8,26 @@ public class ScoreColumn : MonoBehaviour {
 	private int number = 0;
 	private HoleData holeData;
 
+	void Awake() {
+		this.score.text = "";
+	}
+
 	public void LoadHoleData(HoleData data, int holeNumber) {
 		this.holeData = data;
 		this.number = holeNumber;
-		this.score.text = "0";
+		this.score.text = "";
 		this.par.text = data.Par.ToString();
 		this.hole.text = holeNumber.ToString();
 	}
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void SetScore(int holeScore) {
+		this.score.text = holeScore.ToString();
+		if(holeScore < holeData.Par) {
+			score.color = Color.green;
+		} else if(holeScore == holeData.Par) {
+			score.color = Color.white;
+		} else {
+			score.color = Color.red;
+		}
 	}
 }
