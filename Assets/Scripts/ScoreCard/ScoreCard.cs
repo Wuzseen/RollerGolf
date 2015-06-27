@@ -6,7 +6,10 @@ using System.Collections.Generic;
 public class ScoreCard : MonoBehaviour {
 	public List<ScoreColumn> scoreColumns;
 
+	public ScoreColumn totalColumn;
+
 	public Text courseField;
+	public Text totalScoreField;
 
 	private CourseData course;
 
@@ -23,10 +26,6 @@ public class ScoreCard : MonoBehaviour {
 		HoleScorer.OnScoreChanged += HandleOnScoreChanged;
 	}
 
-	void HandleOnScoreChanged (int newScore) {
-		scoreColumns[activeHole].SetScore(newScore);
-	}
-
 	void OnDestroy() {
 		CourseHandler.OnHoleBegin -= HandleOnHoleBegin;
 		HoleScorer.OnScoreChanged -= HandleOnScoreChanged;
@@ -34,6 +33,13 @@ public class ScoreCard : MonoBehaviour {
 	
 	void HandleOnHoleBegin () {
 		activeHole++;
+	}
+	
+	void HandleOnScoreChanged (CourseScore scoreObject) {
+		scoreColumns[activeHole].SetScore(scoreObject.CurrentHoleScore);
+		totalColumn.SetScore(scoreObject.TotalScore,scoreObject.CoursePar);
+		string scoreString = scoreObject.PlusMinusScore > 0 ? string.Format("+{0:D}",scoreObject.PlusMinusScore) : scoreObject.PlusMinusScore.ToString();
+		totalScoreField.text = string.Format("Total Score: {0}",scoreString);
 	}
 
 	// Use this for initialization
@@ -44,6 +50,7 @@ public class ScoreCard : MonoBehaviour {
 	}
 
 	void SetUp() {
+		totalColumn.OverridePar(course.Par);
 		for(int i = 0; i < holes.Count; i++) {
 			ScoreColumn column = scoreColumns[i];
 			column.LoadHoleData(holes[i],i + 1);

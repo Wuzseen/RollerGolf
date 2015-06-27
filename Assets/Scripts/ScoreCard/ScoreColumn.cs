@@ -20,14 +20,23 @@ public class ScoreColumn : MonoBehaviour {
 		this.hole.text = holeNumber.ToString();
 	}
 
-	public void SetScore(int holeScore) {
+	public void SetScore(int holeScore, int parValue) {
 		this.score.text = holeScore.ToString();
-		if(holeScore < holeData.Par) {
+		if(holeScore < parValue) {
 			score.color = Color.green;
-		} else if(holeScore == holeData.Par) {
+		} else if(holeScore == parValue) {
 			score.color = Color.white;
 		} else {
 			score.color = Color.red;
 		}
+
+	}
+
+	public void SetScore(int holeScore) {
+		SetScore(holeScore, this.holeData.Par);
+	}
+
+	public void OverridePar(int newPar) {
+		this.par.text = newPar.ToString();
 	}
 }
