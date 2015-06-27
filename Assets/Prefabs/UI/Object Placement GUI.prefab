@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18807dbe2d2904c0eb8c1be214ed9c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreCard: {fileID: 22455158}
+  scoreCard: {fileID: 11494306}
   tweenTime: .300000012
 --- !u!114 &11414002
 MonoBehaviour:

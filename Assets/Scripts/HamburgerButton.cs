@@ -4,7 +4,8 @@ using System.Collections;
 using DG.Tweening;
 
 public class HamburgerButton : MonoBehaviour {
-	public RectTransform scoreCard;
+	public ScoreCard scoreCard;
+	private RectTransform scoreCardTransform;
 	public float tweenTime = .3f;
 
 
@@ -12,8 +13,9 @@ public class HamburgerButton : MonoBehaviour {
 	private bool on = false;
 
 	void Awake() {
-		scoreCardDimensions = scoreCard.rect.size;
-		scoreCard.localScale = new Vector2(1f,0f);
+		scoreCardTransform = scoreCard.transform as RectTransform;
+		scoreCardDimensions = scoreCardTransform.rect.size;
+		scoreCardTransform.localScale = new Vector2(1f,0f);
 	}
 
 	public void Toggle() {
@@ -26,11 +28,12 @@ public class HamburgerButton : MonoBehaviour {
 
 	void On() {
 		on = true;
-		scoreCard.DOScaleY(1f,tweenTime);
+		scoreCard.UpdateScores();
+		scoreCardTransform.DOScaleY(1f,tweenTime);
 	}
 
 	void Off() {
 		on = false;
-		scoreCard.DOScaleY(0f,tweenTime);
+		scoreCardTransform.DOScaleY(0f,tweenTime);
 	}
 }

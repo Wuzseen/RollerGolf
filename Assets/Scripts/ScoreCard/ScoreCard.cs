@@ -23,6 +23,10 @@ public class ScoreCard : MonoBehaviour {
 			column.LoadHoleData(course.Holes[i],i + 1);
 		}
 	}
+
+	public void UpdateScores() {
+
+	}
 	
 	// Update is called once per frame
 	void Update () {
