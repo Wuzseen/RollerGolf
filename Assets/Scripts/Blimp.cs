@@ -20,7 +20,7 @@ public class Blimp : MonoBehaviour {
 		
 		sr = this.GetComponent<SpriteRenderer>();
 		
-		randomJitter = Random.Range (-.5f,.5f);
+		randomJitter = Random.Range (-.25f,.25f);
 		
 		moveSpeed += randomJitter;
 		//rb = this.GetComponent<Rigidbody2D>();
@@ -30,7 +30,7 @@ public class Blimp : MonoBehaviour {
 	void Update () {
 		float newRot = Mathf.Cos (Time.time)*(maxGainAngle + randomJitter);
 		this.transform.position += (this.transform.right * moveSpeed * Time.deltaTime);
-		this.transform.Rotate(new Vector3(0,0,newRot) * Time.deltaTime);
+		this.transform.Rotate(new Vector3(0,0,newRot) * Time.deltaTime * 0.15f );
 		
 		if(this.transform.position.x < leftBound || this.transform.position.x > rightBound) {
 			switchSprite();
