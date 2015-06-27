@@ -1,20 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public enum State {
-	Placing,
-	Action,
-	Other
-}
-
 public class CourseHandler : MonoBehaviour {
 	public delegate void GameEvent();
 	public static event GameEvent OnGameBegin, OnGameEnd;
 	public static event GameEvent OnHoleBegin, OnHoleEnd;
 	public static event GameEvent OnPlacementBegin, OnPlacementEnd;
 	public static event GameEvent OnActionBegin, OnActionEnd;
-
-	private State state;
 
 	private int holeIndex = 0;
 
@@ -32,13 +23,17 @@ public class CourseHandler : MonoBehaviour {
 
 	void HandleOnObjectiveReached () {
 		inHole = false;
+		EndAction();
+	}
+
+	public void EndAction () {
+		action = false;
 	}
 
 	bool playing;
 	IEnumerator RollerGolf () {
 		Raise (OnGameBegin);
 		playing = true;
-		state = State.Other;
 		while(playing) {
 			yield return StartCoroutine(GameHole ());
 			AdvanceHole();
@@ -50,12 +45,15 @@ public class CourseHandler : MonoBehaviour {
 
 	void AdvanceHole() {
 		holeIndex++;
+		placing = false;
+		action = false;
 	}
 
 	void ExitCourse() {
 		inHole = false;
 		playing = false;
-		state = State.Other;
+		placing = false;
+		action = false;
 	}
 
 	IEnumerator GameHole () {
@@ -71,24 +69,31 @@ public class CourseHandler : MonoBehaviour {
 	}
 
 	public void ConfirmPlacement() {
-		state = State.Other;
+		print ("placement confirmed");
+		placing = false;
 	}
 
+	private bool placing;
 	IEnumerator PlacementPhase () {
-		state = State.Placing;
+		placing = true;
+		print ("Placing begin");
 		Raise (OnPlacementBegin);
-		while(state == State.Placing) {
+		while(placing) {
 			yield return null;
 		}
+		print ("Placing end");
 		Raise (OnPlacementEnd);
 	}
 
+	private bool action;
 	IEnumerator ActionPhase () {
-		state = State.Action;
+		action = true;
+		print ("Action begin");
 		Raise (OnActionBegin);
-		while(state == State.Action) {
+		while(action) {
 			yield return null;
 		}
+		print ("Action end");
 		Raise (OnActionEnd);
 	}
 
