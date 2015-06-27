@@ -442,11 +442,51 @@ Prefab:
       objectReference: {fileID: 720018260}
     - target: {fileID: 22471528, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22471528, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22448424, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 113.699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 22442366, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423252, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_VerticalFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22442366, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474270, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_ChildForceExpandWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474270, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_ChildForceExpandHeight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474270, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_ChildAlignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22442366, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431306, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_Value
+      value: .833333313
+      objectReference: {fileID: 0}
+    - target: {fileID: 22471528, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
