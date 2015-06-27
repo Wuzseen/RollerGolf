@@ -705,6 +705,7 @@ MonoBehaviour:
     - darkerGround
     - darkerHillSlantR
     - hillSlantR
+    - arrow
     spriteTextureGUIDs:
     - cc64694d2d49144408c66116d386bf34
     - 63dfeb3a1eda4b849b0618f766ac3049
@@ -715,6 +716,7 @@ MonoBehaviour:
     - b43b0418247304144bd9ef1cf7154297
     - 38ae9f02f452bd946a2f173a431fb754
     - 1a99396305e15454fa8e1e7e7a99443d
+    - 94d59257544fc784f88b0dacf6db5fc7
     spriteTextureTimeStamps:
     - 1435357755.59871
     - 1435353074.14195
@@ -725,6 +727,7 @@ MonoBehaviour:
     - 1435357754.32664
     - 1435357751.45647
     - 1435357758.9259
+    - 1435329932.83234
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
