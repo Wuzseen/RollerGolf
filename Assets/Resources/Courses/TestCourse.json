@@ -4,12 +4,7 @@
 	"Holes" : [
 		{
 			"HoleName" : "Test 1",
-			"HoleSceneName" : "testHole",
-			"Par" : 3
-		},
-		{
-			"HoleName" : "Test 2",
-			"HoleSceneName" : "testHole",
+			"HoleSceneName" : "hole1",
 			"Par" : 3
 		}
 	]

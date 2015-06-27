@@ -8,6 +8,9 @@ public class ObjectPlacer : MonoBehaviour {
 	public RectTransform shelf;
 	public RectTransform endActionPhaseButton;
 
+	public delegate void GameUIEvent();
+	public static event GameUIEvent OnConfirm, OnRetry;
+
 	[System.Serializable]
 	class placableObject : System.Object {
 		public string name;
@@ -33,6 +36,20 @@ public class ObjectPlacer : MonoBehaviour {
 		CourseHandler.OnPlacementEnd -= HandleOnPlacementEnd;
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnActionEnd -= HandleOnActionEnd;
+	}
+
+	void Raise(GameUIEvent anEvent) {
+		if(anEvent != null) {
+			anEvent();
+		}
+	}
+
+	public void Retry() {
+		Raise (OnRetry);
+	}
+
+	public void Confirm() {
+		Raise (OnConfirm);
 	}
 	
 	void HandleOnActionEnd () {
@@ -60,7 +77,13 @@ public class ObjectPlacer : MonoBehaviour {
 		TweenIn(shelf);
 	}
 
+	private static ObjectPlacer instance;
 	void Awake () {
+		if(instance != null) {
+			Destroy(this.gameObject);
+			return;
+		}
+		instance = this;
 		shelf.anchoredPosition = shelf.anchoredPosition - new Vector2(0f,shelf.rect.height);
 		endActionPhaseButton.anchoredPosition = endActionPhaseButton.anchoredPosition - new Vector2(0f,endActionPhaseButton.rect.height);
 	}

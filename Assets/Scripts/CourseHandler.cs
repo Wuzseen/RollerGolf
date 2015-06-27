@@ -2,23 +2,30 @@
 using System.Collections;
 public class CourseHandler : MonoBehaviour {
 	public delegate void GameEvent();
-	public static event GameEvent OnGameBegin, OnGameEnd;
+	public static event GameEvent OnCourseBegin, OnCourseEnd;
 	public static event GameEvent OnHoleBegin, OnHoleEnd;
 	public static event GameEvent OnPlacementBegin, OnPlacementEnd;
 	public static event GameEvent OnActionBegin, OnActionEnd;
 
 	private int holeIndex = 0;
 
-	void Start() {
+	private CourseData course;
+
+	public void BeginNewCourse(CourseData course) {
+		this.course = course;
 		StartCoroutine(RollerGolf());
 	}
 
 	void OnEnable () {
 		Hole.OnObjectiveReached += HandleOnObjectiveReached;
+		ObjectPlacer.OnRetry += EndAction;
+		ObjectPlacer.OnConfirm += ConfirmPlacement;
 	}
 
 	void OnDisable () {
 		Hole.OnObjectiveReached -= HandleOnObjectiveReached;
+		ObjectPlacer.OnRetry -= EndAction;
+		ObjectPlacer.OnConfirm -= ConfirmPlacement;
 	}
 
 	void HandleOnObjectiveReached () {
@@ -32,16 +39,22 @@ public class CourseHandler : MonoBehaviour {
 
 	bool playing;
 	IEnumerator RollerGolf () {
-		Raise (OnGameBegin);
+		Raise (OnCourseBegin);
 		playing = true;
 		while(playing) {
+			LoadHole();
 			yield return StartCoroutine(GameHole ());
 			AdvanceHole();
 		}
-		Raise (OnGameEnd);
+		Raise (OnCourseEnd);
 	}
 
 	private bool inHole;
+
+	void LoadHole() {
+		HoleData hd = this.course.Holes[holeIndex];
+		Application.LoadLevel(hd.HoleSceneName);
+	}
 
 	void AdvanceHole() {
 		holeIndex++;

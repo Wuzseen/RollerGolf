@@ -7,4 +7,6 @@ public static class GameConsts {
 
 	public static string COURSE_DIRECTORY = "Courses";
 	public static string COURSE_IMAGE_DIRECTORY = "CourseImages";
+
+	public static string GAME_SCENE_NAME = "game";
 }

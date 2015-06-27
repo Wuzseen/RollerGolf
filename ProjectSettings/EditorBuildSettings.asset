@@ -8,4 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mainmenu.unity
   - enabled: 1
+    path: Assets/Scenes/courseLoader.unity
+  - enabled: 1
     path: Assets/Scenes/game.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/hole1.unity

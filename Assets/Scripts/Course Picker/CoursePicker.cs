@@ -30,9 +30,4 @@ public class CoursePicker : MonoBehaviour {
 			button.SetFromData(c);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

@@ -16,6 +16,7 @@ public class CourseButton : MonoBehaviour {
 	}
 
 	public void Press() {
-		// pressed course button
+		Game.SelectedCourse = this.courseData;
+		Application.LoadLevel(GameConsts.GAME_SCENE_NAME);
 	}
 }
