@@ -692,27 +692,24 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: golfCourse
-    spriteCollectionGUID: f36c5260de385466faaf93431f357087
-    spriteCollectionDataGUID: ec0b3be58f1cb4d0a86f4629994143f2
+  - name: GolfTileMap
+    spriteCollectionGUID: 592b5ddaca6f28f4598211122f306f47
+    spriteCollectionDataGUID: d24de40c8fd3d9d48a4f36c736a01e2d
     spriteNames:
-    - singleUnit
-    - golfBall
-    - trackScaffold
-    - basicRamp
     - ground
+    - skyCloud
+    - skyTile
+    - skyClear
     spriteTextureGUIDs:
-    - ec49f2ce851d043b3a26ce6008782b7c
-    - a001f40a49784d24bb9b9dd69f4e9dda
-    - 3cd995477d25152488252863ac33d868
-    - 6aead720af355dc418260898eecd9625
-    - 30d03495c232040f9bf3f27dacf1418c
+    - cc64694d2d49144408c66116d386bf34
+    - 63dfeb3a1eda4b849b0618f766ac3049
+    - 3e3219736210966478b0c5ed90588a1d
+    - 29c32e26bfb6ce247a860d3c7ddc8a92
     spriteTextureTimeStamps:
-    - 1435333306
-    - 1435330955
-    - 1435330955
-    - 1435338606
-    - 1435334189
+    - 1435352931.32778
+    - 1435353074.14195
+    - 1435352550.96302
+    - 1435354048.31467
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
