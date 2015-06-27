@@ -63,8 +63,8 @@ public class CourseHandler : MonoBehaviour {
 		inHole = true;
 		Raise (OnHoleBegin);
 		while(inHole && playing) {
-			if(playing) yield return StartCoroutine(PlacementPhase);
-			if(playing) yield return StartCoroutine(ActionPhase);
+			if(playing) yield return StartCoroutine(PlacementPhase());
+			if(playing) yield return StartCoroutine(ActionPhase());
 		}
 		Raise (OnHoleEnd);
 		print ("Hole end");
