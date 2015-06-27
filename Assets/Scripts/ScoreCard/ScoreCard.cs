@@ -10,12 +10,26 @@ public class ScoreCard : MonoBehaviour {
 
 	private CourseData course;
 
-	private int activeHole = 0;
+	private int activeHole = -1; // will get ++'ed to 0 when the  first hole begins
 
 	private List<HoleData> holes {
 		get {
 			return course.Holes;
 		}
+	}
+
+	void Awake() {
+		CourseHandler.OnHoleBegin += HandleOnHoleBegin;
+		CourseHandler.OnHoleEnd += UpdateScores;
+	}
+
+	void OnDestroy() {
+		CourseHandler.OnHoleBegin -= HandleOnHoleBegin;
+		CourseHandler.OnHoleEnd -= UpdateScores;
+	}
+	
+	void HandleOnHoleBegin () {
+		activeHole++;
 	}
 
 	// Use this for initialization
@@ -33,6 +47,7 @@ public class ScoreCard : MonoBehaviour {
 	}
 
 	public void UpdateScores() {
-
+		int holeScore = HoleScorer.HoleScore;
+		scoreColumns[activeHole].SetScore(holeScore);
 	}
 }

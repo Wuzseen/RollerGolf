@@ -48,6 +48,7 @@ GameObject:
   - 4: {fileID: 488148}
   - 114: {fileID: 11423914}
   - 114: {fileID: 11483802}
+  - 114: {fileID: 11482106}
   m_Layer: 0
   m_Name: _Game
   m_TagString: Untagged
@@ -236,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e4721ef5af24b01a36331a48f7e1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camMoveSpeed: 10
   target: {fileID: 0}
   followSpeed: 50
   minZoomSpeed: 30
@@ -344,6 +346,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowActivationOnStandalone: 0
+--- !u!114 &11482106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab12d11176b04609b7fd8cbe859f379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11483802
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,16 +5,13 @@ using DG.Tweening;
 
 public class HamburgerButton : MonoBehaviour {
 	public ScoreCard scoreCard;
-	private RectTransform scoreCardTransform;
 	public float tweenTime = .3f;
-
-
-	private Vector2 scoreCardDimensions;
+	
+	private RectTransform scoreCardTransform;
 	private bool on = false;
 
 	void Awake() {
 		scoreCardTransform = scoreCard.transform as RectTransform;
-		scoreCardDimensions = scoreCardTransform.rect.size;
 		scoreCardTransform.localScale = new Vector2(1f,0f);
 	}
 
