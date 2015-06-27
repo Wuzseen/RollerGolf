@@ -70,6 +70,7 @@ public class CourseHandler : MonoBehaviour {
 	}
 
 	IEnumerator GameHole () {
+		yield return null;
 		print ("Hole begun");
 		inHole = true;
 		Raise (OnHoleBegin);

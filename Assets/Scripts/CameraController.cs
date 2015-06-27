@@ -1,0 +1,124 @@
+﻿using UnityEngine;
+using System.Collections;
+using DG.Tweening;
+
+public class CameraController : MonoBehaviour {
+	
+	tk2dCamera cam;
+	public Transform target;
+	public float followSpeed = 1.0f;
+	
+	public float minZoomSpeed = 20.0f;
+	public float maxZoomSpeed = 40.0f;
+	
+	public float maxZoomFactor = 0.6f;
+
+	private static CameraController instance;
+	void Awake() {
+		if(instance != null) {
+			Destroy(this.gameObject);
+			return;
+		}
+		instance = this;
+		cam = GetComponent<tk2dCamera>();
+		CourseHandler.OnActionBegin += HandleOnActionBegin;
+		CourseHandler.OnActionEnd += HandleOnActionEnd;
+		CourseHandler.OnPlacementBegin += HandleOnPlacementBegin;
+		CourseHandler.OnPlacementEnd += HandleOnPlacementEnd;
+		CourseHandler.OnHoleBegin += ResetCamera;
+	}
+
+	void OnDestroy() {
+		if(instance == this) {
+			CourseHandler.OnActionBegin -= HandleOnActionBegin;
+			CourseHandler.OnActionEnd -= HandleOnActionEnd;
+			CourseHandler.OnPlacementBegin -= HandleOnPlacementBegin;
+			CourseHandler.OnPlacementEnd -= HandleOnPlacementEnd;
+			CourseHandler.OnHoleBegin -= ResetCamera;
+		}
+	}
+	
+	void HandleOnPlacementEnd () {
+		placementCam = false;
+	}
+	
+	void HandleOnPlacementBegin () {
+		ResetCamera();
+		StartCoroutine(PlacementRoutine());
+	}
+
+	void HandleOnActionEnd() {
+		actionCam = false;
+	}
+
+	void HandleOnActionBegin () {
+		if(target == null) {
+			target = GameObject.FindGameObjectWithTag(GameConsts.TAG_BALL).transform;
+		}
+		StartCoroutine(ActionCamRoutine());
+	}
+
+	void ResetCamera() {
+		print ("RESET");
+		StartCoroutine(CamReset());
+	}
+
+	private bool resettingCamera;
+	IEnumerator CamReset() {
+		if(resettingCamera) {
+			yield break;
+		}
+		resettingCamera = true;
+		Vector3 targetPosition = Tee.position;
+		targetPosition.z = Camera.main.transform.position.z;
+		float transitionTime = 1f;
+		Camera.main.transform.DOMove(targetPosition, transitionTime);
+		float t = 0f;
+		while(t < transitionTime) {
+			t += Time.deltaTime;
+			yield return null;
+		} 
+		resettingCamera = false;
+	}
+
+	private Transform tee;
+	Transform Tee {
+		get {
+			if(tee == null) {
+				tee = GameObject.Find ("Cannon").transform;
+			}
+			return tee;
+		}
+	}
+
+	private bool placementCam;
+	IEnumerator PlacementRoutine() {
+		placementCam = true;
+		while(resettingCamera) {
+			yield return null;
+		}
+		while(placementCam) {
+			yield return null; // placement camera controls
+		}
+	}
+
+	private bool actionCam;
+	IEnumerator ActionCamRoutine() {
+		actionCam = true;
+		while(actionCam) {
+			Vector3 start = transform.position;
+			Vector3 end = Vector3.MoveTowards(start, target.position, followSpeed * Time.deltaTime);
+			end.z = start.z;
+			transform.position = end;
+			
+			Rigidbody rigidbody = target.GetComponent<Rigidbody>();
+			if (rigidbody != null && cam != null) {
+				float spd = rigidbody.velocity.magnitude;
+				float scl = Mathf.Clamp01((spd - minZoomSpeed) / (maxZoomSpeed - minZoomSpeed));
+				float targetZoomFactor = Mathf.Lerp(1, maxZoomFactor, scl);
+				cam.ZoomFactor = Mathf.MoveTowards(cam.ZoomFactor, targetZoomFactor, 0.2f * Time.deltaTime);
+			}
+			yield return new WaitForFixedUpdate();
+		}
+	}
+}
