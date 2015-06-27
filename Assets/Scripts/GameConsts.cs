@@ -6,4 +6,5 @@ public static class GameConsts {
 	public static string TAG_BALL = "ball";
 
 	public static string COURSE_DIRECTORY = "Courses";
+	public static string COURSE_IMAGE_DIRECTORY = "CourseImages";
 }

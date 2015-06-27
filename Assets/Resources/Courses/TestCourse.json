@@ -1,5 +1,6 @@
 {
 	"Name" : "Testing Course",
+	"ImageName" : "Default",
 	"Holes" : [
 		{
 			"HoleName" : "Test 1",
