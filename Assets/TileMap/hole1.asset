@@ -86,7 +86,7 @@ MonoBehaviour:
     hash: 1885351961
     useColor: 1
     generateCollider: 1
-    z: 1
+    z: .300000012
     unityLayer: 0
     sortingLayerName: Default
     sortingOrder: 0

@@ -5,7 +5,7 @@ using System.Collections;
 public class Accelerator : MonoBehaviour {
 
 	[SerializeField]
-	public Vector2 direction = new Vector2(1.0f,0.0f);
+	public int direction = 1;
 	[SerializeField]
 	public float accelerationForce = 10.0f;
 
@@ -21,6 +21,6 @@ public class Accelerator : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		col.gameObject.GetComponent<Rigidbody2D>().AddForce(direction * accelerationForce);
+		col.gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.right * accelerationForce);
 	}
 }
