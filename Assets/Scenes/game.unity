@@ -436,6 +436,10 @@ Prefab:
       propertyPath: m_Name
       value: ObjectPlacementGUI
       objectReference: {fileID: 0}
+    - target: {fileID: 11466152, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 720018260}
     - target: {fileID: 22471528, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -447,6 +451,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &720018260 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11483840, guid: 811c859eee573644d85cc807b892c586,
+    type: 2}
+  m_PrefabInternal: {fileID: 1916497271}
+  m_Script: {fileID: 11500000, guid: 5c36cd9997dd640c8bed893878c83f5d, type: 3}
 --- !u!1001 &831523249
 Prefab:
   m_ObjectHideFlags: 0
