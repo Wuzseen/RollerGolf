@@ -9,8 +9,12 @@ public class HoleData {
 	[fsProperty]
 	public int Par;
 
+	[fsProperty]
+	public string HoleSceneName;
+
 	public HoleData() {
 		HoleName = "TestHole";
 		Par = 3;
+		HoleSceneName = "testHole";
 	}
 }
