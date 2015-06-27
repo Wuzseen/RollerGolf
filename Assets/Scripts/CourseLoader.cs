@@ -10,6 +10,17 @@ public class CourseLoader : MonoBehaviour {
 		}
 	}
 
+	private static CourseLoader instance;
+	public static CourseLoader Instance {
+		get {
+			if(instance == null) {
+				GameObject obj = new GameObject("_SINGLETON(CourseLoader)");
+				instance = obj.AddComponent<CourseLoader>();
+			}
+			return instance;
+		}
+	}
+
 	// Use this for initialization
 	void Awake () {
 		LoadAllCourses();
@@ -25,10 +36,5 @@ public class CourseLoader : MonoBehaviour {
 		for(int i = 0; i < courseFiles.Length; i++) {
 			courses.Add(JSONSerializer.Deserialize(typeof(CourseData),courseFiles[i].text) as CourseData);
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
