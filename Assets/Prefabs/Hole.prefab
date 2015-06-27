@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463062}
   - 212: {fileID: 21258740}
+  - 114: {fileID: 11416168}
   m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
@@ -23,11 +24,22 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 3, z: 0}
+  m_LocalPosition: {x: 65.7914581, y: 22.8413544, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11416168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24a066b157204930a239f53e4d24928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21258740
 SpriteRenderer:
   m_ObjectHideFlags: 1
