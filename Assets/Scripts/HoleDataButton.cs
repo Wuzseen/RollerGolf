@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
+using System.Collections;
 
-public class HoleData : MonoBehaviour {
+public class HoleDataButton : MonoBehaviour {
 	public string HoleName {
 		get {
 			return nameField.text;
@@ -11,11 +11,9 @@ public class HoleData : MonoBehaviour {
 			nameField.text = value;
 		}
 	}
-
+	
 	[SerializeField]
 	private Text nameField;
-
+	
 	public int Par;
-
-	public int Score;
 }

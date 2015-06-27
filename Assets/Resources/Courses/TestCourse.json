@@ -1,0 +1,13 @@
+{
+	"Name" : "Testing Course",
+	"Holes" : [
+		{
+			"HoleName" : "Test 1",
+			"Par" : 3
+		},
+		{
+			"HoleName" : "Test 2",
+			"Par" : 3
+		}
+	]
+}
