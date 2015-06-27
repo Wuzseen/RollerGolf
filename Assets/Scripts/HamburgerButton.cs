@@ -11,7 +11,7 @@ public class HamburgerButton : MonoBehaviour {
 	private bool on = false;
 
 	void Awake() {
-		scoreCardTransform = scoreCard.transform as RectTransform;
+		scoreCardTransform = scoreCard.transform as RectTransform;	
 		scoreCardTransform.localScale = new Vector2(1f,0f);
 	}
 
@@ -25,7 +25,6 @@ public class HamburgerButton : MonoBehaviour {
 
 	void On() {
 		on = true;
-		scoreCard.UpdateScores();
 		scoreCardTransform.DOScaleY(1f,tweenTime);
 	}
 

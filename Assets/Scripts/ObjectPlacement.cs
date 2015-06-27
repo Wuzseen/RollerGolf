@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class ObjectPlacement : MonoBehaviour {
+	public delegate void PlacementEvent();
+	public static event PlacementEvent OnObjectPlaced, OnObjectRemoved;
 
 	public float rotationDegree = 10;
 
@@ -13,10 +15,11 @@ public class ObjectPlacement : MonoBehaviour {
 	void Start () {
 		MouseFollow = GameObject.Find("Mouse Follower");
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+	void Raise(PlacementEvent anEvent) {
+		if(anEvent != null) {
+			anEvent();
+		}
 	}
 
 	public void beginPlacing() {
@@ -42,12 +45,14 @@ public class ObjectPlacement : MonoBehaviour {
 			
 			if(Input.GetButtonDown("Fire1"))
 			{
+				Raise (OnObjectPlaced);
 				this.transform.SetParent(null);
 				placing = false;
 			}
 
 			if(Input.GetButtonDown("Fire2"))
 			{
+				Raise (OnObjectRemoved);
 				Destroy (this.gameObject);
 				yield break;
 			}

@@ -20,12 +20,16 @@ public class ScoreCard : MonoBehaviour {
 
 	void Awake() {
 		CourseHandler.OnHoleBegin += HandleOnHoleBegin;
-		CourseHandler.OnHoleEnd += UpdateScores;
+		HoleScorer.OnScoreChanged += HandleOnScoreChanged;
+	}
+
+	void HandleOnScoreChanged (int newScore) {
+		scoreColumns[activeHole].SetScore(newScore);
 	}
 
 	void OnDestroy() {
 		CourseHandler.OnHoleBegin -= HandleOnHoleBegin;
-		CourseHandler.OnHoleEnd -= UpdateScores;
+		HoleScorer.OnScoreChanged -= HandleOnScoreChanged;
 	}
 	
 	void HandleOnHoleBegin () {
@@ -44,10 +48,5 @@ public class ScoreCard : MonoBehaviour {
 			ScoreColumn column = scoreColumns[i];
 			column.LoadHoleData(holes[i],i + 1);
 		}
-	}
-
-	public void UpdateScores() {
-		int holeScore = HoleScorer.HoleScore;
-		scoreColumns[activeHole].SetScore(holeScore);
 	}
 }

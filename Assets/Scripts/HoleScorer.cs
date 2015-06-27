@@ -2,49 +2,57 @@
 using System.Collections;
 
 public class HoleScorer : MonoBehaviour {
+	public delegate void ScorerEvent(int newScore);
+	public static event ScorerEvent OnScoreChanged;
 
 	private int currentActionAttempts = 0;
-
-	private static HoleScorer instance;
+	private int placedObjects = 0;
 
 	// Use this for initialization
 	void Awake () {
-		if(instance != null) {
-			Destroy(instance);
-			return;
-		}
-		instance = this;
 		CourseHandler.OnActionBegin += HandleOnActionBegin;
 		CourseHandler.OnHoleBegin += ResetHoleScore;
-	}
-
-	void ResetHoleScore () {
-		currentActionAttempts = 0;
+		ObjectPlacement.OnObjectPlaced += HandleOnObjectPlaced;
+		ObjectPlacement.OnObjectRemoved += HandleOnObjectRemoved;
 	}
 	
 	void OnDestroy () {
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnHoleBegin -= ResetHoleScore;
+		ObjectPlacement.OnObjectPlaced -= HandleOnObjectPlaced;
+		ObjectPlacement.OnObjectRemoved -= HandleOnObjectRemoved;
+	}
+	
+	void HandleOnObjectRemoved () {
+		placedObjects = Mathf.Max(0, placedObjects - 1);
+		ScoreChanged();
+	}
+	
+	void HandleOnObjectPlaced () {
+		placedObjects++;
+		ScoreChanged();
+	}
+	
+	void ResetHoleScore () {
+		currentActionAttempts = 0;
+		placedObjects = 0;
 	}
 
 	void HandleOnActionBegin () {
 		currentActionAttempts++;
+		ScoreChanged();
 	}
 
-	int GetPlaceablesScore () {
-		GameObject[] objs = GameObject.FindGameObjectsWithTag(GameConsts.TAG_SCORABLE);
-		return objs.Length;
+	void ScoreChanged() {
+		print("Score has changed");
+		if(OnScoreChanged != null) {
+			OnScoreChanged(Score);
+		}
 	}
 
 	int Score {
 		get {
-			return GetPlaceablesScore() + currentActionAttempts;
-		}
-	}
-
-	public static int HoleScore {
-		get {
-			return instance.Score;
+			return placedObjects + currentActionAttempts;
 		}
 	}
 }
