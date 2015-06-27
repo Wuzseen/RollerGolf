@@ -41,10 +41,14 @@ public class CourseHandler : MonoBehaviour {
 	IEnumerator RollerGolf () {
 		Raise (OnCourseBegin);
 		playing = true;
+		int holeCount = 0;
 		while(playing) {
 			LoadHole();
 			yield return StartCoroutine(GameHole ());
 			AdvanceHole();
+			if(holeCount >= course.Holes.Count) {
+				playing = false;
+			}
 		}
 		Raise (OnCourseEnd);
 	}

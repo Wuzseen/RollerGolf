@@ -11,8 +11,13 @@ public class HamburgerButton : MonoBehaviour {
 	private bool on = false;
 
 	void Awake() {
+		CourseHandler.OnCourseEnd += On;
 		scoreCardTransform = scoreCard.transform as RectTransform;	
 		scoreCardTransform.localScale = new Vector2(1f,0f);
+	}
+
+	void OnDestroy() {
+		CourseHandler.OnCourseEnd -= On;
 	}
 
 	public void Toggle() {
