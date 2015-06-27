@@ -3,7 +3,9 @@ using System.Collections;
 using DG.Tweening;
 
 public class CameraController : MonoBehaviour {
-	
+	public float camMoveSpeed = 10f;
+
+
 	tk2dCamera cam;
 	public Transform target;
 	public float followSpeed = 1.0f;
@@ -98,6 +100,12 @@ public class CameraController : MonoBehaviour {
 			yield return null;
 		}
 		while(placementCam) {
+			float vert = Input.GetAxis("Vertical");
+			float horiz = Input.GetAxis("Horizontal");
+			Vector3 positionOffset = Vector3.zero;
+			positionOffset.x = horiz * Time.deltaTime * camMoveSpeed;
+			positionOffset.y = vert * Time.deltaTime * camMoveSpeed;
+			Camera.main.transform.position += positionOffset;
 			yield return null; // placement camera controls
 		}
 	}

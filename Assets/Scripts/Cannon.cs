@@ -43,7 +43,7 @@ public class Cannon : MonoBehaviour {
 	IEnumerator CannonRoutine() {
 		placing = true;
 		while(placing) {
-			float horiz = Input.GetAxis("Horizontal") * -1f;
+			float horiz = Input.GetAxis("CannonAdjust") * -1f;
 			turretBase.Rotate(Vector3.forward * rotateSpeed * horiz * Time.deltaTime);
 			yield return null;
 		}
