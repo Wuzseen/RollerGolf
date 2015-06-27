@@ -17,4 +17,8 @@ public class HoleData {
 		Par = 3;
 		HoleSceneName = "testHole";
 	}
+
+	public override string ToString () {
+		return string.Format ("Hole {0}, Par {1:D} - {2}",HoleName,Par.ToString(),HoleSceneName);
+	}
 }

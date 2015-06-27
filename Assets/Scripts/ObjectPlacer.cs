@@ -23,6 +23,28 @@ public class ObjectPlacer : MonoBehaviour {
 
 	public GameObject guiAddObjectPrefab;
 	public GameObject guiGridLayout;
+	
+	private static ObjectPlacer instance;
+	void Awake () {
+		if(instance != null) {
+			Destroy(this.gameObject);
+			return;
+		}
+		instance = this;
+		shelf.anchoredPosition = shelf.anchoredPosition - new Vector2(0f,shelf.rect.height);
+		endActionPhaseButton.anchoredPosition = endActionPhaseButton.anchoredPosition - new Vector2(0f,endActionPhaseButton.rect.height);
+	}
+	
+	// Use this for initialization
+	void Start () {
+		for(int i = 0; i < objects.Length; i++) {
+			GameObject temp = (GameObject)Instantiate (guiAddObjectPrefab);
+			temp.GetComponent<AddObjectGUIHandler>().setName(objects[i].name);
+			temp.GetComponent<AddObjectGUIHandler>().setImage(objects[i].guiRepresenation);
+			temp.GetComponent<AddObjectGUIHandler>().setGameObject(objects[i].prefab);
+			temp.transform.SetParent(guiGridLayout.transform, false);
+		}
+	}
 
 	void OnEnable() {
 		CourseHandler.OnPlacementBegin += HandleOnPlacementBegin;
@@ -75,27 +97,5 @@ public class ObjectPlacer : MonoBehaviour {
 	
 	void HandleOnPlacementBegin () {
 		TweenIn(shelf);
-	}
-
-	private static ObjectPlacer instance;
-	void Awake () {
-		if(instance != null) {
-			Destroy(this.gameObject);
-			return;
-		}
-		instance = this;
-		shelf.anchoredPosition = shelf.anchoredPosition - new Vector2(0f,shelf.rect.height);
-		endActionPhaseButton.anchoredPosition = endActionPhaseButton.anchoredPosition - new Vector2(0f,endActionPhaseButton.rect.height);
-	}
-
-	// Use this for initialization
-	void Start () {
-		for(int i = 0; i < objects.Length; i++) {
-			GameObject temp = (GameObject)Instantiate (guiAddObjectPrefab);
-			temp.GetComponent<AddObjectGUIHandler>().setName(objects[i].name);
-			temp.GetComponent<AddObjectGUIHandler>().setImage(objects[i].guiRepresenation);
-			temp.GetComponent<AddObjectGUIHandler>().setGameObject(objects[i].prefab);
-			temp.transform.SetParent(guiGridLayout.transform, false);
-		}
 	}
 }
