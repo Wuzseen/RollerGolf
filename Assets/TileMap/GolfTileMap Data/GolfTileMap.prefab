@@ -233,6 +233,267 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
+  - name: darkerHillSlant
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .539066434, y: .00781640597}
+    - {x: .789058566, y: .00781640597}
+    - {x: .539066434, y: .257808596}
+    - {x: .789058566, y: .257808596}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 9d2b02fe884745445b73217608eda51a, type: 2}
+    materialId: 0
+    sourceTextureGUID: a7a67740b6399bd49b1999bacaa021bf
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: hillSlant
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .273441404, y: .273441404}
+    - {x: .523433566, y: .273441404}
+    - {x: .273441404, y: .523433566}
+    - {x: .523433566, y: .523433566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 9d2b02fe884745445b73217608eda51a, type: 2}
+    materialId: 0
+    sourceTextureGUID: c103ace0dc857d5469c8a53e085cdbdd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 3
+    customColliders: []
+    colliderVertices:
+    - {x: .484375, y: .484375, z: -.100000001}
+    - {x: .484375, y: .484375, z: .100000001}
+    - {x: 0, y: 0, z: -.100000001}
+    - {x: 0, y: 0, z: .100000001}
+    - {x: 1, y: 0, z: -.100000001}
+    - {x: 1, y: 0, z: .100000001}
+    - {x: 1, y: 1, z: -.100000001}
+    - {x: 1, y: 1, z: .100000001}
+    colliderIndicesFwd: 020000000300000000000000000000000300000001000000040000000300000002000000040000000500000003000000060000000500000004000000060000000700000005000000000000000100000006000000060000000100000007000000000000000600000004000000040000000200000000000000050000000700000001000000010000000300000005000000
+    colliderIndicesBack: 000000000300000002000000010000000300000000000000020000000300000004000000030000000500000004000000040000000500000006000000050000000700000006000000060000000100000000000000070000000100000006000000040000000600000000000000000000000200000004000000010000000700000005000000050000000300000001000000
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D:
+    - points:
+      - {x: .484375, y: .484375}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+    edgeCollider2D: []
+    attachPoints: []
+  - name: darkerGround
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .273441404, y: .539066434}
+    - {x: .523433566, y: .539066434}
+    - {x: .273441404, y: .789058566}
+    - {x: .523433566, y: .789058566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 9d2b02fe884745445b73217608eda51a, type: 2}
+    materialId: 0
+    sourceTextureGUID: b43b0418247304144bd9ef1cf7154297
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: darkerHillSlantR
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .539066434, y: .273441404}
+    - {x: .789058566, y: .273441404}
+    - {x: .539066434, y: .523433566}
+    - {x: .789058566, y: .523433566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 9d2b02fe884745445b73217608eda51a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 38ae9f02f452bd946a2f173a431fb754
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: hillSlantR
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .539066434, y: .539066434}
+    - {x: .789058566, y: .539066434}
+    - {x: .539066434, y: .789058566}
+    - {x: .789058566, y: .789058566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 9d2b02fe884745445b73217608eda51a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1a99396305e15454fa8e1e7e7a99443d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 3
+    customColliders: []
+    colliderVertices:
+    - {x: 0, y: 1, z: -.100000001}
+    - {x: 0, y: 1, z: .100000001}
+    - {x: 0, y: 0, z: -.100000001}
+    - {x: 0, y: 0, z: .100000001}
+    - {x: 1, y: 0, z: -.100000001}
+    - {x: 1, y: 0, z: .100000001}
+    - {x: .53125, y: .46875, z: -.100000001}
+    - {x: .53125, y: .46875, z: .100000001}
+    colliderIndicesFwd: 020000000300000000000000000000000300000001000000040000000300000002000000040000000500000003000000060000000700000004000000040000000700000005000000000000000100000006000000060000000100000007000000060000000400000002000000020000000000000006000000030000000500000007000000070000000100000003000000
+    colliderIndicesBack: 000000000300000002000000010000000300000000000000020000000300000004000000030000000500000004000000040000000700000006000000050000000700000004000000060000000100000000000000070000000100000006000000020000000400000006000000060000000000000002000000070000000500000003000000030000000100000007000000
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D:
+    - points:
+      - {x: 0, y: 1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: .53125, y: .46875}
+    edgeCollider2D: []
+    attachPoints: []
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
@@ -250,7 +511,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 32
-  buildKey: 697352363
+  buildKey: 1830843867
   dataGuid: d24de40c8fd3d9d48a4f36c736a01e2d
   managedSpriteCollection: 0
   hasPlatformData: 0
