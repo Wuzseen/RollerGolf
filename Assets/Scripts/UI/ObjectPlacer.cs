@@ -39,9 +39,10 @@ public class ObjectPlacer : MonoBehaviour {
 	void Start () {
 		for(int i = 0; i < objects.Length; i++) {
 			GameObject temp = (GameObject)Instantiate (guiAddObjectPrefab);
-			temp.GetComponent<AddObjectGUIHandler>().setName(objects[i].name);
-			temp.GetComponent<AddObjectGUIHandler>().setImage(objects[i].guiRepresenation);
-			temp.GetComponent<AddObjectGUIHandler>().setGameObject(objects[i].prefab);
+			AddObjectGUIHandler guiHandle = temp.GetComponent<AddObjectGUIHandler>();
+			guiHandle.setName(objects[i].name);
+			guiHandle.setImage(objects[i].guiRepresenation);
+			guiHandle.setGameObject(objects[i].prefab);
 			temp.transform.SetParent(guiGridLayout.transform, false);
 		}
 	}

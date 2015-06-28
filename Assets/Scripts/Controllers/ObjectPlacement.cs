@@ -15,6 +15,8 @@ public class ObjectPlacement : MonoBehaviour {
 
 	private GameObject MouseFollow;
 
+	public static GameObject CurrentPlaceable = null;
+
 	// Use this for initialization
 	void Start () {
 		MouseFollow = GameObject.Find("Mouse Follower");
@@ -35,6 +37,7 @@ public class ObjectPlacement : MonoBehaviour {
 	public IEnumerator Placing() {
 		if(placing) yield break;
 
+		CurrentPlaceable = this.gameObject;
 		placing = true;
 		yield return null;
 		if(!reSelect) {
@@ -54,13 +57,19 @@ public class ObjectPlacement : MonoBehaviour {
 			
 			if(Input.GetButtonDown("Fire1") && valid)
 			{
+				if(MouseArea.MouseIsOver == false) {
+					yield return null;
+					continue;
+				}
 				this.transform.SetParent(null);
+				CurrentPlaceable = null;
 				placing = false;
 			}
 
 			if(Input.GetButtonDown("Fire2"))
 			{
 				Raise (OnObjectRemoved);
+				CurrentPlaceable = null;
 				Destroy (this.gameObject);
 				yield break;
 			}
