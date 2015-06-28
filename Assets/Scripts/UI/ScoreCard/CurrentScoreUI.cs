@@ -16,6 +16,8 @@ public class CurrentScoreUI : MonoBehaviour {
 		parText.text = string.Format("Par {0:D}",Game.SelectedCourse.Holes[currentHole].Par);
 		currentHole++;
 		holeNumber.text = currentHole.ToString();
+		strokes.text = string.Format("{0:D} Strokes",0);
+		objects.text = string.Format("{0:D} Objects",0);
 	}
 
 	void OnDestroy() {

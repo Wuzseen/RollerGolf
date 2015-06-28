@@ -1324,16 +1324,6 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 11.333333
       objectReference: {fileID: 0}
-    - target: {fileID: 11431778, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
-      propertyPath: confirmButton
-      value: 
-      objectReference: {fileID: 1866497573}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1866497573 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11466152, guid: 507a4aa90092223448b20a529e7b7f9d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1837623342}
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}

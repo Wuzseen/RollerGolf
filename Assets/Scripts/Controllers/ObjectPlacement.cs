@@ -17,10 +17,29 @@ public class ObjectPlacement : MonoBehaviour {
 
 	public static GameObject CurrentPlaceable = null;
 
+	void Awake() {
+		CourseHandler.OnActionBegin += HandleOnActionBegin;
+		CourseHandler.OnActionEnd += HandleOnActionEnd;
+	}
+
+
 	// Use this for initialization
 	void Start () {
 		MouseFollow = GameObject.Find("Mouse Follower");
 		valid = true;
+	}
+
+	void OnDestroy() {
+		CourseHandler.OnActionBegin -= HandleOnActionBegin;
+		CourseHandler.OnActionEnd -= HandleOnActionEnd;
+	}
+
+	private bool inAction;
+	void HandleOnActionBegin () {
+		inAction = true;
+	}
+	void HandleOnActionEnd () {
+		inAction = false;
 	}
 
 	void Raise(PlacementEvent anEvent) {
@@ -91,6 +110,9 @@ public class ObjectPlacement : MonoBehaviour {
 
 
 	void OnMouseDown() {
+		if(inAction) {
+			return;
+		}
 		StartCoroutine(Placing());
 	}
 }
