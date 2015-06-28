@@ -8,6 +8,11 @@
 			"Par" : 3
 		},
 		{
+			"HoleName" : "Basic Hole 2",
+			"HoleSceneName" : "basicHole2",
+			"Par" : 3
+		},
+		{
 			"HoleName" : "Hole 1",
 			"HoleSceneName" : "hole1",
 			"Par" : 3
