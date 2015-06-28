@@ -54,8 +54,8 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions: []
   m_Parameters:
-    startWidth: .5
-    endWidth: .5
+    startWidth: .25
+    endWidth: .25
     m_StartColor:
       serializedVersion: 2
       rgba: 4294967295
@@ -76,11 +76,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 38d4bff6de3eae74bbad95784da1cc12, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Parameters.startWidth
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Parameters.endWidth
-      value: .5
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Parameters.m_StartColor.rgba
