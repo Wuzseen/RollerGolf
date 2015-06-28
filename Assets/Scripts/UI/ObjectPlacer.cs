@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 public class ObjectPlacer : MonoBehaviour {
+	public Button confirmButton;
 	public RectTransform shelf;
 	public RectTransform endActionPhaseButton;
 
@@ -39,9 +40,10 @@ public class ObjectPlacer : MonoBehaviour {
 	void Start () {
 		for(int i = 0; i < objects.Length; i++) {
 			GameObject temp = (GameObject)Instantiate (guiAddObjectPrefab);
-			temp.GetComponent<AddObjectGUIHandler>().setName(objects[i].name);
-			temp.GetComponent<AddObjectGUIHandler>().setImage(objects[i].guiRepresenation);
-			temp.GetComponent<AddObjectGUIHandler>().setGameObject(objects[i].prefab);
+			AddObjectGUIHandler guiHandle = temp.GetComponent<AddObjectGUIHandler>();
+			guiHandle.setName(objects[i].name);
+			guiHandle.setImage(objects[i].guiRepresenation);
+			guiHandle.setGameObject(objects[i].prefab);
 			temp.transform.SetParent(guiGridLayout.transform, false);
 		}
 	}
@@ -73,11 +75,18 @@ public class ObjectPlacer : MonoBehaviour {
 		}
 	}
 
+	void Update() {
+		confirmButton.interactable = (ObjectPlacement.CurrentPlaceable == null);
+	}
+
 	public void Retry() {
 		Raise (OnRetry);
 	}
 
 	public void Confirm() {
+		if(ObjectPlacement.CurrentPlaceable != null) {
+			return;
+		}
 		Raise (OnConfirm);
 	}
 	
