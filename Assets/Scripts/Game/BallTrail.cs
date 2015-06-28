@@ -19,20 +19,33 @@ public class BallTrail : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		inAction = false;
-		ball = GameObject.Find ("Ball");
 		CourseHandler.OnActionBegin += HandleOnActionBegin;
 		CourseHandler.OnActionEnd += HandleOnActionEnd;
+		CourseHandler.OnHoleBegin += HandleOnHoleBegin;
+	}
+
+	void HandleOnHoleBegin ()
+	{
+		inAction = false;
+		ball = GameObject.Find ("Ball");
+		for(int i = 0; i < trails.Count; i++)
+		{
+			Destroy (trails[i].gameObject);
+		}
+		trails.Clear();
 	}
 
 	void OnDestroy() {
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnActionEnd -= HandleOnActionEnd;
+		CourseHandler.OnHoleBegin -= HandleOnHoleBegin;
 	}
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+
 
 	void HandleOnActionEnd() {
 		inAction = false;
