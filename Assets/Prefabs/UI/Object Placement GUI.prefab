@@ -1064,6 +1064,7 @@ GameObject:
   - 222: {fileID: 22207600}
   - 114: {fileID: 11427956}
   - 114: {fileID: 11422168}
+  - 114: {fileID: 11490074}
   m_Layer: 5
   m_Name: CurrentScore
   m_TagString: Untagged
@@ -2175,7 +2176,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 22471528}
   m_Direction: 0
   m_Value: 0
-  m_Size: .966902018
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2211,6 +2212,9 @@ MonoBehaviour:
   - name: U Shaped Pipe
     prefab: {fileID: 199942, guid: 75fcf120c1134ec4f843018dc7d32a6a, type: 2}
     guiRepresenation: {fileID: 21300000, guid: a6b233fcb07d9b84aaf762f3b034a441, type: 3}
+  - name: Anti-Gravity Tube
+    prefab: {fileID: 125224, guid: c26414b12be86b14dabf3e93e2b11f15, type: 2}
+    guiRepresenation: {fileID: 21300000, guid: 54cc95a187c40ac4b96f0419ac818867, type: 3}
   guiAddObjectPrefab: {fileID: 192214, guid: 514b30ab64a62664dbd3b5f857f3e7d1, type: 2}
   guiGridLayout: {fileID: 124614}
 --- !u!114 &11432400
@@ -3305,6 +3309,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &11490074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96adfb1e579654410bcded4dcf27702c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holeNumber: {fileID: 11409738}
+  strokes: {fileID: 11457660}
+  objects: {fileID: 11424148}
+  parText: {fileID: 11470388}
 --- !u!114 &11491952
 MonoBehaviour:
   m_ObjectHideFlags: 1

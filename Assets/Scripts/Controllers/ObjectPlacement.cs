@@ -11,6 +11,8 @@ public class ObjectPlacement : MonoBehaviour {
 
 	private bool valid;
 
+	public bool keepUpright;
+
 	private GameObject MouseFollow;
 
 	// Use this for initialization
@@ -41,7 +43,7 @@ public class ObjectPlacement : MonoBehaviour {
 				this.transform.parent = MouseFollow.transform;
 			}
 			
-			if(Input.GetAxis("Mouse ScrollWheel") != 0)
+			if(Input.GetAxis("Mouse ScrollWheel") != 0 && !keepUpright)
 			{
 				this.transform.Rotate(new Vector3(0,0,rotationDegree * Input.GetAxis("Mouse ScrollWheel")));
 			}
