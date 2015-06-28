@@ -3,6 +3,11 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Basic Hole",
+			"HoleSceneName" : "basicHole",
+			"Par" : 3
+		},
+		{
 			"HoleName" : "Hole 1",
 			"HoleSceneName" : "hole1",
 			"Par" : 3

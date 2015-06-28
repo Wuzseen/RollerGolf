@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Holes/hole2.unity
   - enabled: 1
     path: Assets/Scenes/Holes/hole3.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/basicHole.unity
