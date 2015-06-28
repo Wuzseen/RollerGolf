@@ -45,12 +45,18 @@ public class ObjectPlacer : MonoBehaviour {
 			temp.transform.SetParent(guiGridLayout.transform, false);
 		}
 	}
+	
+	void HandleOnRetirePressed () {
+		instance = null;
+		Destroy(this.gameObject);
+	}
 
 	void OnEnable() {
 		CourseHandler.OnPlacementBegin += HandleOnPlacementBegin;
 		CourseHandler.OnPlacementEnd += HandleOnPlacementEnd;
 		CourseHandler.OnActionBegin += HandleOnActionBegin;
 		CourseHandler.OnActionEnd += HandleOnActionEnd;
+		ScoreCard.OnRetirePressed += HandleOnRetirePressed;
 	}
 
 	void OnDisable() {
@@ -58,6 +64,7 @@ public class ObjectPlacer : MonoBehaviour {
 		CourseHandler.OnPlacementEnd -= HandleOnPlacementEnd;
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnActionEnd -= HandleOnActionEnd;
+		ScoreCard.OnRetirePressed -= HandleOnRetirePressed;
 	}
 
 	void Raise(GameUIEvent anEvent) {

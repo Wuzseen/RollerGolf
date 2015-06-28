@@ -17,6 +17,9 @@ public class CameraExtents : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if(Camera.main == null) {
+			return;
+		}
 		Vector2 camPosition = Camera.main.transform.position;
 		Left.position = new Vector2(Left.position.x, camPosition.y);
 		Right.position = new Vector2(Right.position.x, camPosition.y);
@@ -46,9 +49,6 @@ public class CameraExtents : MonoBehaviour {
 
 	public bool RestrictDown() {
 		Vector3 vp = TransVisible(Bottom);
-		if(vp.y <= 0f) {
-			print (vp);
-		}
 		return !(vp.y <= 0f);
 	}
 }

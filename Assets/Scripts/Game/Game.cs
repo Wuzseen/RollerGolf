@@ -26,5 +26,15 @@ public class Game : MonoBehaviour {
 			Instantiate(ui);
 		}
 		courseManager.BeginNewCourse(SelectedCourse);
+		ScoreCard.OnRetirePressed += HandleOnRetirePressed;
+	}
+
+	void OnDestroy() {
+		ScoreCard.OnRetirePressed -= HandleOnRetirePressed;
+	}
+
+	void HandleOnRetirePressed () {
+		Application.LoadLevel("mainmenu");
+		Destroy(this.gameObject);
 	}
 }

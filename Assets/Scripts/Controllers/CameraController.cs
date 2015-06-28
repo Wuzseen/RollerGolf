@@ -110,6 +110,10 @@ public class CameraController : MonoBehaviour {
 			yield return null;
 		}
 		while(placementCam) {
+			if(Camera.main == null) {
+				yield return null;
+				continue;
+			}
 			float vert = Input.GetAxis("Vertical");
 			CameraExtents ce = CameraExtents.Instance;
 			if(vert > 0f && ce.RestrictUp()) {
