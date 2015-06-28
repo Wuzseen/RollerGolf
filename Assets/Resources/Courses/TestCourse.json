@@ -3,6 +3,11 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Vertigo",
+			"HoleSceneName" : "vertigo",
+			"Par" : 8
+		},
+		{
 			"HoleName" : "Basic Hole",
 			"HoleSceneName" : "basicHole",
 			"Par" : 3
@@ -10,22 +15,22 @@
 		{
 			"HoleName" : "Basic Hole 2",
 			"HoleSceneName" : "basicHole2",
-			"Par" : 3
+			"Par" : 5
 		},
 		{
 			"HoleName" : "Hole 1",
 			"HoleSceneName" : "hole1",
-			"Par" : 3
+			"Par" : 15
 		},
 		{
 			"HoleName" : "Hole 2",
 			"HoleSceneName" : "hole2",
-			"Par" : 3
+			"Par" : 20
 		},
 		{
 			"HoleName" : "Hole 3",
 			"HoleSceneName" : "hole3",
-			"Par" : 3
+			"Par" : 25
 		}
 	]
 }

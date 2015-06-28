@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb356b9a6a1da084695128b00c8721be, type: 3}
-  m_Name: basicHole
+  m_Name: vertigo
   m_EditorClassIdentifier: 
   tileSize: {x: 1, y: 1, z: 0}
   tileOrigin: {x: 0, y: 0, z: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
   tileInfo: []
   tileMapLayers:
   - name: sky
-    hash: 2048941395
+    hash: 1892887448
     useColor: 1
     generateCollider: 1
     z: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
     physicsMaterial2D: {fileID: 0}
-  - name: bgLayer
-    hash: 1413116467
+  - name: bg
+    hash: 960338633
     useColor: 1
     generateCollider: 1
     z: .100000001
@@ -55,8 +55,8 @@ MonoBehaviour:
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
     physicsMaterial2D: {fileID: 0}
-  - name: collisionLayer
-    hash: 1892887448
+  - name: collision
+    hash: 558944063
     useColor: 1
     generateCollider: 1
     z: .100000001
