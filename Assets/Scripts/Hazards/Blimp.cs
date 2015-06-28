@@ -46,6 +46,10 @@ public class Blimp : MonoBehaviour {
 			sr.sprite = leftSprite;
 		}
 		else sr.sprite = rightSprite;
+
+		Destroy(GetComponent<PolygonCollider2D>());
+		gameObject.AddComponent<PolygonCollider2D>();
+
 	}
 	
 }
