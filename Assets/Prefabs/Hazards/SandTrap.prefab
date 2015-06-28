@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 407452}
   - 212: {fileID: 21253516}
   - 60: {fileID: 6024828}
+  - 114: {fileID: 11428994}
   m_Layer: 0
   m_Name: SandTrap
   m_TagString: Untagged
@@ -145,6 +146,18 @@ PolygonCollider2D:
       - {x: .296875, y: -3.984375}
       - {x: .46875, y: -3.953125}
       - {x: .734375, y: -3.875}
+--- !u!114 &11428994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d557983bd474d4b9ecb05be5a3c41a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverAmount: .5
 --- !u!212 &21253516
 SpriteRenderer:
   m_ObjectHideFlags: 1
