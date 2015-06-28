@@ -26,13 +26,15 @@ public class BallTrail : MonoBehaviour {
 
 	void HandleOnHoleBegin ()
 	{
-		inAction = false;
-		ball = GameObject.Find ("Ball");
 		for(int i = 0; i < trails.Count; i++)
 		{
 			Destroy (trails[i].gameObject);
 		}
 		trails.Clear();
+		
+		inAction = false;
+		ball = GameObject.Find ("Ball");
+	
 	}
 
 	void OnDestroy() {

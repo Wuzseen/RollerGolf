@@ -30,9 +30,10 @@ public class Cannon : MonoBehaviour {
 	bool placing;
 	
 	void ResetBall () {
-		ball.position = spawnPoint.position;
-		ball.transform.position += new Vector3(0,0,1);
+		Debug.Log (ball.position);
+		Debug.Log (spawnPoint.position);
 		ball.transform.parent = spawnPoint.transform;
+		ball.transform.localPosition = Vector3.zero + new Vector3(0,0,1);
 		ball.velocity = Vector2.zero;
 		ball.isKinematic = true;
 	}
@@ -55,8 +56,8 @@ public class Cannon : MonoBehaviour {
 	}
 
 	void ShootCannon () {
+		ball.transform.localPosition = new Vector3(0,0,-1);
 		ball.transform.parent = null;
-		ball.transform.position += new Vector3(0,0,-1);
 		ball.isKinematic = false;
 		ball.velocity = Vector2.zero;
 		ball.transform.position = spawnPoint.position;

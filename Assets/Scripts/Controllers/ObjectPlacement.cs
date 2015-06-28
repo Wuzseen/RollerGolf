@@ -113,6 +113,9 @@ public class ObjectPlacement : MonoBehaviour {
 		if(inAction) {
 			return;
 		}
-		StartCoroutine(Placing());
+		if(!placing)
+		{
+			StartCoroutine(Placing());
+		}
 	}
 }
