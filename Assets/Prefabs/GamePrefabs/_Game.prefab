@@ -239,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseCamMoveSpeed: 10
   extraCamMoveSpeed: 20
-  zoomSpeed: 10
+  zoomSpeed: 1
   target: {fileID: 0}
   followSpeed: 50
   minZoomSpeed: 30
