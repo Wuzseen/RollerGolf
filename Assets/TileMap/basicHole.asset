@@ -48,7 +48,7 @@ MonoBehaviour:
     hash: 1413116467
     useColor: 1
     generateCollider: 1
-    z: .5
+    z: .100000001
     unityLayer: 0
     sortingLayerName: 
     sortingOrder: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     hash: 1892887448
     useColor: 1
     generateCollider: 1
-    z: 1
+    z: .100000001
     unityLayer: 0
     sortingLayerName: 
     sortingOrder: 0

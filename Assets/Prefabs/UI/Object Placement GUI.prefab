@@ -1133,7 +1133,6 @@ GameObject:
   - 222: {fileID: 22207600}
   - 114: {fileID: 11427956}
   - 114: {fileID: 11422168}
-  - 114: {fileID: 11490074}
   m_Layer: 5
   m_Name: CurrentScore
   m_TagString: Untagged
@@ -3487,21 +3486,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!114 &11490074
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96adfb1e579654410bcded4dcf27702c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holeNumber: {fileID: 11409738}
-  strokes: {fileID: 11457660}
-  objects: {fileID: 11424148}
-  parText: {fileID: 11470388}
 --- !u!114 &11491952
 MonoBehaviour:
   m_ObjectHideFlags: 1
