@@ -31,15 +31,59 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  tileInfo: []
+  tileInfo:
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
+  - stringVal: 
+    intVal: 0
+    floatVal: 0
+    enablePrefabOffset: 0
   tileMapLayers:
   - name: sky
     hash: 1044831849
     useColor: 1
     generateCollider: 1
-    z: .100000001
+    z: 0
     unityLayer: 0
-    sortingLayerName: 
+    sortingLayerName: Default
     sortingOrder: 0
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
@@ -48,9 +92,9 @@ MonoBehaviour:
     hash: 1998338069
     useColor: 1
     generateCollider: 1
-    z: .100000001
+    z: .5
     unityLayer: 0
-    sortingLayerName: 
+    sortingLayerName: Default
     sortingOrder: 0
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
@@ -59,9 +103,9 @@ MonoBehaviour:
     hash: 1892887448
     useColor: 1
     generateCollider: 1
-    z: 0
+    z: 1
     unityLayer: 0
-    sortingLayerName: 
+    sortingLayerName: Default
     sortingOrder: 0
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}

@@ -3,8 +3,18 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
-			"HoleName" : "Test 1",
+			"HoleName" : "Hole 1",
+			"HoleSceneName" : "hole1",
+			"Par" : 3
+		},
+		{
+			"HoleName" : "Hole 2",
 			"HoleSceneName" : "hole2",
+			"Par" : 3
+		},
+		{
+			"HoleName" : "Hole 3",
+			"HoleSceneName" : "hole3",
 			"Par" : 3
 		}
 	]
