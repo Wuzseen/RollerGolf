@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -106,7 +106,7 @@ public class HoleScorer : MonoBehaviour {
 	void Awake () {
 		CourseHandler.OnActionBegin += HandleOnActionBegin;
 		CourseHandler.OnHoleBegin += ResetHoleScore;
-		ObjectPlacement.OnObjectPlaced += HandleOnObjectPlaced;
+		ObjectPlacement.OnObjectSelected += HandleOnObjectPlaced;
 		ObjectPlacement.OnObjectRemoved += HandleOnObjectRemoved;
 		scorer = new CourseScore(Game.SelectedCourse);
 	}
@@ -114,7 +114,7 @@ public class HoleScorer : MonoBehaviour {
 	void OnDestroy () {
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnHoleBegin -= ResetHoleScore;
-		ObjectPlacement.OnObjectPlaced -= HandleOnObjectPlaced;
+		ObjectPlacement.OnObjectSelected -= HandleOnObjectPlaced;
 		ObjectPlacement.OnObjectRemoved -= HandleOnObjectRemoved;
 	}
 	
