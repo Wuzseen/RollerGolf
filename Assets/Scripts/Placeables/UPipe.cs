@@ -20,12 +20,14 @@ public class UPipe : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
+		if(col.gameObject.tag == "ball")
+		{
+			col.gameObject.transform.position = other.position;
 
-		col.gameObject.transform.position = other.position;
+			Vector3 x = this.transform.up * col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * slowDownFactor;
 
-		Vector3 x = this.transform.up * col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * slowDownFactor;
-
-		col.gameObject.GetComponent<Rigidbody2D>().velocity = x;
+			col.gameObject.GetComponent<Rigidbody2D>().velocity = x;
+		}
 	}
 
 }

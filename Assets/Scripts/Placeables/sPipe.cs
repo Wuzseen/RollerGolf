@@ -20,7 +20,15 @@ public class sPipe : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		col.gameObject.transform.position = other.position;
-		col.gameObject.GetComponent<Rigidbody2D>().velocity *= slowDownFactor;
+		if(col.gameObject.tag == "ball")
+		{
+			col.gameObject.transform.position = other.position;
+
+			Vector3 x = other.transform.up * col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * slowDownFactor;
+			
+			col.gameObject.GetComponent<Rigidbody2D>().velocity = x;
+
+			//col.gameObject.GetComponent<Rigidbody2D>().velocity *= slowDownFactor;
+		}
 	}
 }

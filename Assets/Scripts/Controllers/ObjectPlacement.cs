@@ -9,11 +9,14 @@ public class ObjectPlacement : MonoBehaviour {
 
 	public bool placing;
 
+	private bool valid;
+
 	private GameObject MouseFollow;
 
 	// Use this for initialization
 	void Start () {
 		MouseFollow = GameObject.Find("Mouse Follower");
+		valid = true;
 	}
 
 	void Raise(PlacementEvent anEvent) {
@@ -43,7 +46,7 @@ public class ObjectPlacement : MonoBehaviour {
 				this.transform.Rotate(new Vector3(0,0,rotationDegree * Input.GetAxis("Mouse ScrollWheel")));
 			}
 			
-			if(Input.GetButtonDown("Fire1"))
+			if(Input.GetButtonDown("Fire1") && valid)
 			{
 				Raise (OnObjectPlaced);
 				this.transform.SetParent(null);
@@ -59,6 +62,16 @@ public class ObjectPlacement : MonoBehaviour {
 
 			yield return null;
 		}
+	}
+
+	void OnTriggerStay2D(Collider2D col)
+	{
+		valid = false;
+	}
+
+	void OnTriggerExit2D(Collider2D col)
+	{
+		valid = true;
 	}
 
 

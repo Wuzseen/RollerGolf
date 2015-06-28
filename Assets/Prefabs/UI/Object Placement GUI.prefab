@@ -2029,6 +2029,12 @@ MonoBehaviour:
   - name: Trampoline
     prefab: {fileID: 151392, guid: 2336a0dff4ba7a5428f1bb460f31fb3c, type: 2}
     guiRepresenation: {fileID: 21300000, guid: 98e2c9ad85fad7c48b9c7a0fcefc0739, type: 3}
+  - name: S Shaped Pipe
+    prefab: {fileID: 163256, guid: ba13becd1e8b23f4bae797ac83c320f0, type: 2}
+    guiRepresenation: {fileID: 21300000, guid: 65dba59a065f8fd439a3b76b0515a7b6, type: 3}
+  - name: U Shaped Pipe
+    prefab: {fileID: 199942, guid: 75fcf120c1134ec4f843018dc7d32a6a, type: 2}
+    guiRepresenation: {fileID: 21300000, guid: a6b233fcb07d9b84aaf762f3b034a441, type: 3}
   guiAddObjectPrefab: {fileID: 192214, guid: 514b30ab64a62664dbd3b5f857f3e7d1, type: 2}
   guiGridLayout: {fileID: 124614}
 --- !u!114 &11432400
