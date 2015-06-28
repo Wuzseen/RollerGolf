@@ -8,26 +8,29 @@ public class Cannon : MonoBehaviour {
 	public Transform turretBase, turretEnd, spawnPoint;
 
 	void Start() {
-		HandleOnActionEnd();
+		ResetBall();
 	}
 
 	void OnEnable() {
 		CourseHandler.OnPlacementBegin += HandleOnPlacementBegin;
 		CourseHandler.OnPlacementEnd += HandleOnPlacementEnd;
 		CourseHandler.OnActionBegin += ShootCannon;
-		CourseHandler.OnActionEnd += HandleOnActionEnd;
+		CourseHandler.OnActionEnd += ResetBall;
+		CourseHandler.OnHoleBegin += ResetBall;
 	}
 	
 	void OnDisable() {
 		CourseHandler.OnPlacementBegin -= HandleOnPlacementBegin;
 		CourseHandler.OnPlacementEnd -= HandleOnPlacementEnd;
 		CourseHandler.OnActionBegin -= ShootCannon;
-		CourseHandler.OnActionEnd -= HandleOnActionEnd;
+		CourseHandler.OnActionEnd -= ResetBall;
+		CourseHandler.OnHoleBegin -= ResetBall;
 	}
 
 	bool placing;
 	
-	void HandleOnActionEnd () {
+	void ResetBall () {
+		ball.position = spawnPoint.position;
 		ball.velocity = Vector2.zero;
 		ball.isKinematic = true;
 	}
