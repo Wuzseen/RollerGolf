@@ -3,7 +3,11 @@ using System.Collections;
 using DG.Tweening;
 
 public class CameraController : MonoBehaviour {
-	public float camMoveSpeed = 10f;
+	public float baseCamMoveSpeed = 10f;
+
+	public float extraCamMoveSpeed = 20f;
+
+	public float zoomSpeed = 10f;
 
 
 	tk2dCamera cam;
@@ -14,6 +18,7 @@ public class CameraController : MonoBehaviour {
 	public float maxZoomSpeed = 40.0f;
 	
 	public float maxZoomFactor = 0.6f;
+	public float minZoomFactor = 1.2f;
 
 	private static CameraController instance;
 	void Awake() {
@@ -92,6 +97,12 @@ public class CameraController : MonoBehaviour {
 		}
 	}
 
+	float moveSpeedT {
+		get {
+			return 1f - ((cam.ZoomFactor - maxZoomFactor) / (minZoomFactor - maxZoomFactor)) ;
+		}
+	}
+
 	private bool placementCam;
 	IEnumerator PlacementRoutine() {
 		placementCam = true;
@@ -102,9 +113,13 @@ public class CameraController : MonoBehaviour {
 			float vert = Input.GetAxis("Vertical");
 			float horiz = Input.GetAxis("Horizontal");
 			Vector3 positionOffset = Vector3.zero;
-			positionOffset.x = horiz * Time.deltaTime * camMoveSpeed;
-			positionOffset.y = vert * Time.deltaTime * camMoveSpeed;
+			positionOffset.x = horiz * Time.deltaTime * baseCamMoveSpeed + horiz * Time.deltaTime * extraCamMoveSpeed * moveSpeedT;
+			positionOffset.y = vert * Time.deltaTime * baseCamMoveSpeed + vert * Time.deltaTime * extraCamMoveSpeed * moveSpeedT;
 			Camera.main.transform.position += positionOffset;
+
+			float zoom = Input.GetAxis("Zoom");
+			cam.ZoomFactor = Mathf.Clamp(cam.ZoomFactor + zoom * Time.deltaTime * zoomSpeed,maxZoomFactor,minZoomFactor);
+
 			yield return null; // placement camera controls
 		}
 	}
