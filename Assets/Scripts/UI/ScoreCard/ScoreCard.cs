@@ -36,7 +36,7 @@ public class ScoreCard : MonoBehaviour {
 	}
 	
 	void HandleOnScoreChanged (CourseScore scoreObject) {
-		scoreColumns[activeHole].SetScore(scoreObject.CurrentHoleScore);
+		scoreColumns[activeHole].SetScore(scoreObject.CurrentHoleScore.Score);
 		totalColumn.SetScore(scoreObject.TotalScore,scoreObject.CoursePar);
 		string scoreString = scoreObject.PlusMinusScore > 0 ? string.Format("+{0:D}",scoreObject.PlusMinusScore) : scoreObject.PlusMinusScore.ToString();
 		totalScoreField.text = string.Format("Total Score: {0}",scoreString);

@@ -2,9 +2,35 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public class HoleScore {
+	public int Strokes {get; set;}
+	public int Objects {get; set;}
+
+	public HoleScore() {
+		this.Strokes = 0;
+		this.Objects = 0;
+	}
+
+	public HoleScore(int strokes, int objects) {
+		this.Strokes = strokes;
+		this.Objects = objects;
+	}
+
+	public void UpdateScore(int strokes, int objects) {
+		this.Strokes = strokes;
+		this.Objects = objects;
+	}
+
+	public int Score {
+		get {
+			return Strokes + Objects;
+		}
+	}
+}
+
 public class CourseScore {
 	private List<int> holePars;
-	private List<int> holeScores;
+	private List<HoleScore> holeScores;
 	private int currentHole;
 	public int CoursePar {
 		get {
@@ -16,7 +42,7 @@ public class CourseScore {
 		get {
 			int t = 0;
 			for(int i = 0; i < holeScores.Count; i++) {
-				t += holeScores[i];
+				t += holeScores[i].Score;
 			}
 			return t;
 		}
@@ -33,11 +59,17 @@ public class CourseScore {
 	public CourseScore(CourseData course) {
 		this.course = course;
 		holePars = new List<int>();
-		holeScores = new List<int>();
+		holeScores = new List<HoleScore>();
 		currentHole = -1;
 		for(int i = 0; i < this.course.Holes.Count; i++) {
 			holePars.Add(this.course.Holes[i].Par);
-			holeScores.Add(0);
+			holeScores.Add(new HoleScore());
+		}
+	}
+
+	public int CurrentHole {
+		get {
+			return this.currentHole;
 		}
 	}
 
@@ -46,18 +78,18 @@ public class CourseScore {
 		Debug.Log("Scoring began for hole: " + currentHole.ToString());
 	}
 
-	public int CurrentHoleScore {
+	public HoleScore CurrentHoleScore {
 		get {
 			return holeScores[currentHole];
 		}
 	}
 
-	public void SetCurrentHole(int score) {
-		SetHoleScore(currentHole,score);
+	public void SetCurrentHole(int strokes, int objects) {
+		SetHoleScore(currentHole,strokes,objects);
 	}
 
-	public void SetHoleScore(int holeIndex, int score) {
-		holeScores[holeIndex] = score;
+	public void SetHoleScore(int holeIndex, int strokes, int objects) {
+		holeScores[holeIndex].UpdateScore(strokes,objects);
 	}
 }
 
@@ -109,7 +141,7 @@ public class HoleScorer : MonoBehaviour {
 	}
 
 	void ScoreChanged() {
-		scorer.SetCurrentHole(Score);
+		scorer.SetCurrentHole(currentActionAttempts, placedObjects);
 		if(OnScoreChanged != null) {
 			OnScoreChanged(scorer);
 		}
