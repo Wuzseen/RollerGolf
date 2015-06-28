@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObjectPlacement : MonoBehaviour {
 	public delegate void PlacementEvent();
-	public static event PlacementEvent OnObjectPlaced, OnObjectRemoved;
+	public static event PlacementEvent OnObjectSelected, OnObjectRemoved;
 
 	public float rotationDegree = 10;
 
@@ -31,11 +31,15 @@ public class ObjectPlacement : MonoBehaviour {
 		StartCoroutine(Placing ());
 	}
 
+	private bool reSelect = false;
 	public IEnumerator Placing() {
 		if(placing) yield break;
 
 		placing = true;
 		yield return null;
+		if(!reSelect) {
+			Raise (OnObjectSelected);
+		}
 
 		while(placing) {
 			if(this.transform.parent == null)
@@ -50,7 +54,6 @@ public class ObjectPlacement : MonoBehaviour {
 			
 			if(Input.GetButtonDown("Fire1") && valid)
 			{
-				Raise (OnObjectPlaced);
 				this.transform.SetParent(null);
 				placing = false;
 			}
@@ -64,6 +67,7 @@ public class ObjectPlacement : MonoBehaviour {
 
 			yield return null;
 		}
+		reSelect = true;
 	}
 
 	void OnTriggerStay2D(Collider2D col)
