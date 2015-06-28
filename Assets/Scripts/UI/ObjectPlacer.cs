@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 public class ObjectPlacer : MonoBehaviour {
+	public Button confirmButton;
 	public RectTransform shelf;
 	public RectTransform endActionPhaseButton;
 
@@ -74,11 +75,18 @@ public class ObjectPlacer : MonoBehaviour {
 		}
 	}
 
+	void Update() {
+		confirmButton.interactable = (ObjectPlacement.CurrentPlaceable == null);
+	}
+
 	public void Retry() {
 		Raise (OnRetry);
 	}
 
 	public void Confirm() {
+		if(ObjectPlacement.CurrentPlaceable != null) {
+			return;
+		}
 		Raise (OnConfirm);
 	}
 	

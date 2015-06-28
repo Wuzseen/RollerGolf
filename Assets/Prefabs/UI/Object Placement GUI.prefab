@@ -2223,6 +2223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83101436689313a439e36d4e470ed0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confirmButton: {fileID: 11466152}
   shelf: {fileID: 22448424}
   endActionPhaseButton: {fileID: 22470144}
   objects:
