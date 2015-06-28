@@ -1063,6 +1063,7 @@ GameObject:
   - 224: {fileID: 22430358}
   - 222: {fileID: 22207600}
   - 114: {fileID: 11427956}
+  - 114: {fileID: 11422168}
   m_Layer: 5
   m_Name: CurrentScore
   m_TagString: Untagged
@@ -1892,6 +1893,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11422168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96adfb1e579654410bcded4dcf27702c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holeNumber: {fileID: 11409738}
+  strokes: {fileID: 11457660}
+  objects: {fileID: 11424148}
+  parText: {fileID: 11470388}
 --- !u!114 &11422488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2159,7 +2175,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 22471528}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: .966902018
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
