@@ -111,13 +111,29 @@ public class CameraController : MonoBehaviour {
 		}
 		while(placementCam) {
 			float vert = Input.GetAxis("Vertical");
+			CameraExtents ce = CameraExtents.Instance;
+			if(vert > 0f && ce.RestrictUp()) {
+				print ("UpRestrict");
+				vert = 0f;
+			} else if(vert < 0f && ce.RestrictDown()) {
+				print ("DownRestrict");
+				vert = 0f;
+			}
 			float horiz = Input.GetAxis("Horizontal");
+			if(horiz > 0 && ce.RestrictRight()) {
+				horiz = 0f;
+			} else if(horiz < 0 && ce.RestrictLeft()) {
+				horiz = 0f;
+			}
 			Vector3 positionOffset = Vector3.zero;
 			positionOffset.x = horiz * Time.deltaTime * baseCamMoveSpeed + horiz * Time.deltaTime * extraCamMoveSpeed * moveSpeedT;
 			positionOffset.y = vert * Time.deltaTime * baseCamMoveSpeed + vert * Time.deltaTime * extraCamMoveSpeed * moveSpeedT;
 			Camera.main.transform.position += positionOffset;
 
 			float zoom = Input.GetAxis("Zoom");
+			if(ce.RestrictDown() || ce.RestrictUp() || ce.RestrictRight() || ce.RestrictLeft()) {
+				zoom = Mathf.Clamp(zoom,0f,1f);
+			}
 			cam.ZoomFactor = Mathf.Clamp(cam.ZoomFactor + zoom * Time.deltaTime * zoomSpeed,maxZoomFactor,minZoomFactor);
 
 			yield return null; // placement camera controls
