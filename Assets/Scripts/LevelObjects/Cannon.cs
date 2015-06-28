@@ -31,6 +31,7 @@ public class Cannon : MonoBehaviour {
 	
 	void ResetBall () {
 		ball.position = spawnPoint.position;
+		ball.transform.parent = spawnPoint.transform;
 		ball.velocity = Vector2.zero;
 		ball.isKinematic = true;
 	}
@@ -53,6 +54,7 @@ public class Cannon : MonoBehaviour {
 	}
 
 	void ShootCannon () {
+		ball.transform.parent = null;
 		ball.isKinematic = false;
 		ball.velocity = Vector2.zero;
 		ball.transform.position = spawnPoint.position;

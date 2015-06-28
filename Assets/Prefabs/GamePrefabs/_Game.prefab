@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trail: {fileID: 107928, guid: 4085620acdbc072438ede1f3ac5c5378, type: 2}
   trails: []
-  numFrames: 3
+  numFrames: 5
   numTrails: 5
   decreaseAlphaBy: .100000001
 --- !u!114 &11482106

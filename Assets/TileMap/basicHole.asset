@@ -65,4 +65,4 @@ MonoBehaviour:
     sortingOrder: 0
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
-    physicsMaterial2D: {fileID: 0}
+    physicsMaterial2D: {fileID: 6200000, guid: 7bd468c55befac74bafe35251e01d594, type: 2}
