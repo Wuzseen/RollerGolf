@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UPipe : MonoBehaviour {
+public class UPipe : Placeable {
 
 	public Transform other;
 
@@ -18,10 +18,16 @@ public class UPipe : MonoBehaviour {
 	
 	}
 
+	protected override void OnCollisionEnter2D (Collision2D col)
+	{
+		base.OnCollisionEnter2D (col);
+	}
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.gameObject.tag == "ball")
+		if(col.gameObject.tag == GameConsts.TAG_BALL)
 		{
+			base.OnCollisionEnter2D(null);
 			col.gameObject.transform.position = other.position;
 
 			Vector3 x = this.transform.up * col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * slowDownFactor;

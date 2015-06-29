@@ -21,7 +21,7 @@ public class AntiGravity : Placeable {
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.gameObject.tag == "ball")
+		if(col.gameObject.tag == GameConsts.TAG_BALL)
 		{
 			base.OnCollisionEnter2D(null);
 			col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
