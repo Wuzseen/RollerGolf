@@ -3,19 +3,29 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
-			"HoleName" : "Basic Hole",
+			"HoleName" : "Tee Off",
 			"HoleSceneName" : "basicHole",
 			"Par" : 3
 		},
 		{
-			"HoleName" : "Basic Hole 2",
+			"HoleName" : "Water Hazard",
+			"HoleSceneName" : "hole3",
+			"Par" : 6
+		},
+		{
+			"HoleName" : "Pipe Dream",
 			"HoleSceneName" : "basicHole2",
 			"Par" : 5
 		},
 		{
 			"HoleName" : "Vertigo",
 			"HoleSceneName" : "vertigo",
-			"Par" : 8
+			"Par" : 12
+		},
+		{
+			"HoleName" : "Shoot the Moon",
+			"HoleSceneName" : "hole1",
+			"Par" : 10
 		},
 		{
 			"HoleName" : "Mount Doom",
@@ -28,17 +38,7 @@
 			"Par" : 15
 		},
 		{
-			"HoleName" : "Water Hazard",
-			"HoleSceneName" : "hole3",
-			"Par" : 25
-		},
-		{
-			"HoleName" : "Hole 1",
-			"HoleSceneName" : "hole1",
-			"Par" : 15
-		},
-		{
-			"HoleName" : "Hole 2",
+			"HoleName" : "Dream of Par",
 			"HoleSceneName" : "hole2",
 			"Par" : 20
 		}
