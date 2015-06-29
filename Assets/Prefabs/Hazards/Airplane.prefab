@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &157442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 401262}
+  - 96: {fileID: 9687624}
+  m_Layer: 0
+  m_Name: SmokeTrail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &159430
 GameObject:
   m_ObjectHideFlags: 0
@@ -18,6 +34,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &401262
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 456726}
+  m_RootOrder: 0
 --- !u!4 &456726
 Transform:
   m_ObjectHideFlags: 1
@@ -25,9 +53,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 55, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 401262}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!61 &6184362
@@ -43,6 +72,51 @@ BoxCollider2D:
   m_Offset: {x: 4, y: 1}
   serializedVersion: 2
   m_Size: {x: 8, y: 1.29999995}
+--- !u!96 &9687624
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157442}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f7f596e40fd22324e9db35ea95669b6e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 20
+  m_StartWidth: .25
+  m_EndWidth: 1.5
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 478051966
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 1601993852
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 3182276013
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 3740858616
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!114 &11497238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,12 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a582531d2e8c2024a994af81b68ce091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 5
   maxGainAngle: 15
   rightSprite: {fileID: 21300000, guid: 11901d09c75f3544cb87f4733d313267, type: 3}
   leftSprite: {fileID: 21300000, guid: b0904ac3b3709f548a8c489b53d9e474, type: 3}
-  leftBound: -512
-  rightBound: 512
+  leftBound: -32
+  rightBound: 128
 --- !u!212 &21234194
 SpriteRenderer:
   m_ObjectHideFlags: 1

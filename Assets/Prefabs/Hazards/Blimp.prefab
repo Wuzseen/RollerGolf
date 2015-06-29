@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &154178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 464490}
+  - 96: {fileID: 9607494}
+  m_Layer: 0
+  m_Name: SmokeTrail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &183922
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,10 +41,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.55097628, y: 3.96829891, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 464490}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &464490
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 2.5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 440410}
   m_RootOrder: 0
 --- !u!60 &6069906
 PolygonCollider2D:
@@ -101,6 +130,51 @@ PolygonCollider2D:
       - {x: 4.9375, y: .421875}
       - {x: 5.171875, y: .78125}
       - {x: 5.515625, y: .828125}
+--- !u!96 &9607494
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154178}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f7f596e40fd22324e9db35ea95669b6e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 60
+  m_StartWidth: .25
+  m_EndWidth: 2.5
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 472591147
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 1597326398
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 3180832683
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4092390636
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!114 &11460632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f252c34295f64844a777b7023fd18b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: .5
+  moveSpeed: 1
   maxGainAngle: 25
   rightSprite: {fileID: 21300000, guid: 2373244d2f3c9024698c4412cfae937e, type: 3}
   leftSprite: {fileID: 21300000, guid: d7c1432c673143f458c367fef0cb6c1a, type: 3}
