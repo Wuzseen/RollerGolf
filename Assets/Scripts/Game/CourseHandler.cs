@@ -87,6 +87,7 @@ public class CourseHandler : MonoBehaviour {
 		inHole = true;
 		success = false;
 		Raise (OnHoleBegin);
+        yield return new WaitForSeconds(CameraController.RESET_TIME);
 		while(inHole && playing) {
 			if(playing) yield return StartCoroutine(PlacementPhase());
 			if(playing) yield return StartCoroutine(ActionPhase());

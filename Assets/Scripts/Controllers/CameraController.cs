@@ -3,6 +3,8 @@ using System.Collections;
 using DG.Tweening;
 
 public class CameraController : MonoBehaviour {
+    public static float RESET_TIME = 2f;
+
 	public float baseCamMoveSpeed = 10f;
 
 	public float extraCamMoveSpeed = 20f;
@@ -50,7 +52,7 @@ public class CameraController : MonoBehaviour {
 	}
 	
 	void HandleOnPlacementBegin () {
-		ResetCamera();
+		ResetCamera(false);
 		StartCoroutine(PlacementRoutine());
 	}
 
@@ -65,19 +67,30 @@ public class CameraController : MonoBehaviour {
 		StartCoroutine(ActionCamRoutine());
 	}
 
+    void ResetCamera(bool firstTime) {
+        StartCoroutine(CamReset(firstTime));
+    }
+
 	void ResetCamera() {
-		StartCoroutine(CamReset());
+        ResetCamera(true);
 	}
 
 	private bool resettingCamera;
-	IEnumerator CamReset() {
+	IEnumerator CamReset(bool firstTime) {
 		if(resettingCamera) {
 			yield break;
 		}
+        if (firstTime) {
+            GameObject hole = GameObject.FindGameObjectWithTag(GameConsts.TAG_HOLE);
+            Vector3 targetP = hole.transform.position;
+            targetP.z = Camera.main.transform.position.z;
+            Camera.main.transform.position = targetP;
+            yield return new WaitForSeconds(1f);
+        }
 		resettingCamera = true;
 		Vector3 targetPosition = Tee.position;
 		targetPosition.z = Camera.main.transform.position.z;
-		float transitionTime = 1f;
+		float transitionTime = RESET_TIME - 1f;
 		Camera.main.transform.DOMove(targetPosition, transitionTime);
 		float t = 0f;
 		while(t < transitionTime) {

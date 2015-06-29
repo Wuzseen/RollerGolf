@@ -50,7 +50,7 @@ public class CourseScore {
 
 	public int PlusMinusScore {
 		get {
-			return CoursePar - TotalScore;
+			return TotalScore - CoursePar;
 		}
 	}
 
