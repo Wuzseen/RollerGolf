@@ -7,6 +7,7 @@ TagManager:
   - hole
   - ball
   - scorable
+  - water
   layers:
   - Default
   - TransparentFX

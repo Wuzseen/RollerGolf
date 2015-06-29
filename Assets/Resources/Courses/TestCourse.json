@@ -3,6 +3,11 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Water Hazard",
+			"HoleSceneName" : "hole3",
+			"Par" : 25
+		},
+		{
 			"HoleName" : "Vertigo",
 			"HoleSceneName" : "vertigo",
 			"Par" : 8
@@ -26,11 +31,6 @@
 			"HoleName" : "Hole 2",
 			"HoleSceneName" : "hole2",
 			"Par" : 20
-		},
-		{
-			"HoleName" : "Hole 3",
-			"HoleSceneName" : "hole3",
-			"Par" : 25
 		}
 	]
 }
