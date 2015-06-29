@@ -57,7 +57,9 @@ public class CourseHandler : MonoBehaviour {
 
 	void LoadHole() {
 		HoleData hd = this.course.Holes[holeIndex];
-		Application.LoadLevel(hd.HoleSceneName);
+		if(Application.loadedLevelName == "game") {
+			Application.LoadLevel(hd.HoleSceneName);
+		}
 	}
 
 	void AdvanceHole() {
