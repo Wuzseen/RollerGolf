@@ -306,7 +306,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: e311efa71b6cbab4884996cc043561fc, type: 2}
   renderData: {fileID: 1469482116}
   spriteCollection: {fileID: 11400440, guid: d24de40c8fd3d9d48a4f36c736a01e2d, type: 2}
-  spriteCollectionKey: 195239358
+  spriteCollectionKey: 399777029
   width: 30
   height: 70
   partitionSizeX: 32

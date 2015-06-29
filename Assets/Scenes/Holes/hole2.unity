@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   editorDataGUID: 0c318331f857f7e4aafb56bd8a3cc569
-  data: {fileID: 11400000, guid: 71bdbbe776a409849814ba2102456a77, type: 2}
+  data: {fileID: 11400000, guid: 41ed66b9d4d7f8743b9c458c33e95868, type: 2}
   renderData: {fileID: 1853532387}
   spriteCollection: {fileID: 11400440, guid: d24de40c8fd3d9d48a4f36c736a01e2d, type: 2}
   spriteCollectionKey: 195239358

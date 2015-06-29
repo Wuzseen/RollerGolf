@@ -215,6 +215,33 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &111546504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 111546505}
+  m_Layer: 0
+  m_Name: Prefabs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &111546505
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 111546504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1356779244}
+  m_RootOrder: 3
 --- !u!1 &182597841
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,10 +421,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   editorDataGUID: 0c318331f857f7e4aafb56bd8a3cc569
-  data: {fileID: 11400000, guid: d816234451e3a44db9cf6d92dd07465e, type: 2}
+  data: {fileID: 11400000, guid: 991a5c9774dc2b74c9d5ef426b435bf0, type: 2}
   renderData: {fileID: 1356779243}
   spriteCollection: {fileID: 11400440, guid: d24de40c8fd3d9d48a4f36c736a01e2d, type: 2}
-  spriteCollectionKey: 195239358
+  spriteCollectionKey: 399777029
   width: 64
   height: 64
   partitionSizeX: 32
@@ -512,7 +539,7 @@ MonoBehaviour:
     numRows: 2
     divX: 32
     divY: 32
-  prefabsRoot: {fileID: 1117404497}
+  prefabsRoot: {fileID: 111546504}
   tilePrefabsList: []
   _inEditMode: 1
   serializedMeshPath: 
@@ -1999,33 +2026,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 998742916}
   m_Mesh: {fileID: 677665644}
---- !u!1 &1117404497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1117404498}
-  m_Layer: 0
-  m_Name: Prefabs
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1117404498
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1117404497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1356779244}
-  m_RootOrder: 3
 --- !u!1 &1151099953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,7 +2286,7 @@ Transform:
   - {fileID: 1151099954}
   - {fileID: 210986724}
   - {fileID: 1206717580}
-  - {fileID: 1117404498}
+  - {fileID: 111546505}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!1 &1385259872
