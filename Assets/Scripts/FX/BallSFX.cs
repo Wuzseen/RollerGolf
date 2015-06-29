@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SFX : MonoBehaviour {
+public class BallSFX : MonoBehaviour {
     private AudioSource source;
 
     public AudioClip[] waterSplashes;
