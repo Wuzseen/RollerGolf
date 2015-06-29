@@ -2,14 +2,11 @@
 using System.Collections;
 
 public class BallSFX : MonoBehaviour {
-    private AudioSource source;
-
     public AudioClip[] waterSplashes;
 
     public AudioClip[] bumps;
 
 	void Awake () {
-        source = this.GetComponent<AudioSource>();
         Ball.OnWaterHit += Ball_OnWaterHit;
         Ball.OnGroundImpact += Ball_OnGroundImpact;
     }
@@ -34,7 +31,5 @@ public class BallSFX : MonoBehaviour {
 
     void PlayFX(AudioClip clip) {
 		SoundManager.PlaySFX(clip);
-//        source.clip = clip;
-//        source.Play();
     }
 }

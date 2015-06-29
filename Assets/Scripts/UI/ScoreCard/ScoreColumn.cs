@@ -20,6 +20,12 @@ public class ScoreColumn : MonoBehaviour {
 		this.hole.text = holeNumber.ToString();
 	}
 
+	public int Number {
+		get {
+			return number;
+		}
+	}
+
 	public void SetScore(int holeScore, int parValue) {
 		this.score.text = holeScore.ToString();
 		if(holeScore < parValue) {
