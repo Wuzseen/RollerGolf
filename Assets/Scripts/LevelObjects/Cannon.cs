@@ -68,7 +68,6 @@ public class Cannon : MonoBehaviour {
 		yield return new WaitForSeconds(.2f);
 		ball.transform.localPosition = new Vector3(0,0,-1);
 		ball.transform.parent = null;
-        ball.transform.localScale = Vector3.one;
 		ball.isKinematic = false;
 		ball.velocity = Vector2.zero;
 		ball.transform.position = spawnPoint.position;
