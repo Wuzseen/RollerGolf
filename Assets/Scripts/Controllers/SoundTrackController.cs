@@ -19,7 +19,7 @@ public class SoundTrackController : MonoBehaviour {
 	}
 
 	void PlayRandomSong() {
-		SoundManager.Play (soundTracks[Random.Range(0,soundTracks.Length)],false,SongEnd);
+		SoundManager.Play (soundTracks[Random.Range(0,soundTracks.Length - 1)],false,SongEnd);
 	}
 
 	void SongEnd() {
