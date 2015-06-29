@@ -12,6 +12,7 @@ public class SoundTrackController : MonoBehaviour {
 			return;
 		}
 		SoundManager.Instance.showDebug = false;
+        SoundManager.SetIgnoreLevelLoad(true);
 		SoundManager.SetCrossDuration(2f);
 		Instance = this;
 		PlayRandomSong();
