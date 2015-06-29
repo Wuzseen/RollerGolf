@@ -3,6 +3,21 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Basic Hole",
+			"HoleSceneName" : "basicHole",
+			"Par" : 3
+		},
+		{
+			"HoleName" : "Basic Hole 2",
+			"HoleSceneName" : "basicHole2",
+			"Par" : 5
+		},
+		{
+			"HoleName" : "Vertigo",
+			"HoleSceneName" : "vertigo",
+			"Par" : 8
+		},
+		{
 			"HoleName" : "Mount Doom",
 			"HoleSceneName" : "mtDoom",
 			"Par" : 8
@@ -16,21 +31,6 @@
 			"HoleName" : "Water Hazard",
 			"HoleSceneName" : "hole3",
 			"Par" : 25
-		},
-		{
-			"HoleName" : "Vertigo",
-			"HoleSceneName" : "vertigo",
-			"Par" : 8
-		},
-		{
-			"HoleName" : "Basic Hole",
-			"HoleSceneName" : "basicHole",
-			"Par" : 3
-		},
-		{
-			"HoleName" : "Basic Hole 2",
-			"HoleSceneName" : "basicHole2",
-			"Par" : 5
 		},
 		{
 			"HoleName" : "Hole 1",

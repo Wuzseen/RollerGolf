@@ -11,6 +11,7 @@ public class SoundTrackController : MonoBehaviour {
 			Destroy(this.gameObject);
 			return;
 		}
+		SoundManager.Instance.showDebug = false;
 		SoundManager.SetCrossDuration(2f);
 		Instance = this;
 		PlayRandomSong();

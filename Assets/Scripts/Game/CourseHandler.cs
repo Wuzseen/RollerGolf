@@ -55,9 +55,11 @@ public class CourseHandler : MonoBehaviour {
 
 	private bool inHole;
 
+	private bool fullGame = false;
 	void LoadHole() {
 		HoleData hd = this.course.Holes[holeIndex];
-		if(Application.loadedLevelName == "game") {
+		if(Application.loadedLevelName == "game" || fullGame) {
+			fullGame = true;
 			Application.LoadLevel(hd.HoleSceneName);
 		}
 	}
