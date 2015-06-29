@@ -15,8 +15,13 @@ public class Airplane : MonoBehaviour {
 	private Rigidbody2D rb;
 	private float randomJitter;
 
+    private Transform startingPosition;
+
 	// Use this for initialization
 	void Start () {
+
+        startingPosition = this.transform;
+
 		sr = this.GetComponent<SpriteRenderer>();
 
 		randomJitter = Random.Range (-3.0f,5.0f);
@@ -27,12 +32,16 @@ public class Airplane : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float newRot = Mathf.Cos (Time.time)*(maxGainAngle + randomJitter);
+
+        float newRot = Mathf.Cos (Time.time)*(maxGainAngle + randomJitter);
 		this.transform.position += (this.transform.right * moveSpeed * Time.deltaTime);
 		this.transform.Rotate(new Vector3(0,0,newRot) * Time.deltaTime);
 
 		if(this.transform.position.x < leftBound || this.transform.position.x > rightBound) {
 			switchSprite();
+
+            this.transform.position = new Vector3(this.transform.position.x, startingPosition.transform.position.y, this.transform.position.z);
+
 			moveSpeed *= -1;
 		}
 

@@ -42,5 +42,10 @@
 			"HoleSceneName" : "hole2",
 			"Par" : 20
 		}
+		{
+			"HoleName" : "Flight of the Valkyries",
+			"HoleSceneName" : "flightOfTheValkyries",
+			"Par" : 35
+		}
 	]
 }
