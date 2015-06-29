@@ -7,6 +7,8 @@ public class Cannon : MonoBehaviour {
 	public Rigidbody2D ball;
 	public Transform turretBase, turretEnd, spawnPoint;
 
+	public AudioClip[] cannonShots;
+
 	void Start() {
 		ResetBall();
 	}
@@ -54,12 +56,19 @@ public class Cannon : MonoBehaviour {
 	}
 
 	void ShootCannon () {
+		StartCoroutine(CannonShotRoutine());
+	}
+
+	IEnumerator CannonShotRoutine () {
+		
 		ball.transform.localPosition = new Vector3(0,0,-1);
 		ball.transform.parent = null;
 		ball.isKinematic = false;
 		ball.velocity = Vector2.zero;
 		ball.transform.position = spawnPoint.position;
 		ball.AddForce(shotDirection * force);
+		SoundManager.PlaySFX(cannonShots[Random.Range(0,cannonShots.Length)]);
+		yield return null;
 	}
 
 	Vector2 shotDirection {

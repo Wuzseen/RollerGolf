@@ -187,6 +187,12 @@ MonoBehaviour:
   turretBase: {fileID: 429488}
   turretEnd: {fileID: 492388}
   spawnPoint: {fileID: 429746}
+  cannonShots:
+  - {fileID: 8300000, guid: 4496ff67ed03c4a33b9f5a98e6d105bb, type: 3}
+  - {fileID: 8300000, guid: 9916aa3858c8d42ea88289f82050c4af, type: 3}
+  - {fileID: 8300000, guid: 17255d49317374396998612840d0931c, type: 3}
+  - {fileID: 8300000, guid: f0401179f12b84018b057e16bae0e877, type: 3}
+  - {fileID: 8300000, guid: b680287a7d2664859b7725c2419d5927, type: 3}
 --- !u!212 &21209992
 SpriteRenderer:
   m_ObjectHideFlags: 1
