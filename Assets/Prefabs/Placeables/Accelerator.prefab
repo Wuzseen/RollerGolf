@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collideClip: {fileID: 8300000, guid: ffa097066ca3841a0b7d55aaf820aed7, type: 3}
   direction: 1
-  accelerationForce: 500
+  accelerationForce: 15
 --- !u!212 &21210748
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -141,6 +141,10 @@ Prefab:
       propertyPath: collideClip
       value: 
       objectReference: {fileID: 8300000, guid: ffa097066ca3841a0b7d55aaf820aed7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: accelerationForce
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 186682}

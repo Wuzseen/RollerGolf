@@ -4,9 +4,6 @@ using System.Collections;
 
 public class Accelerator : Placeable {
 
-	[SerializeField]
-	public int direction = 1;
-	[SerializeField]
 	public float accelerationForce = 10.0f;
 
 	// Use this for initialization
@@ -22,6 +19,9 @@ public class Accelerator : Placeable {
 	protected override void OnCollisionEnter2D(Collision2D col)
 	{
 		base.OnCollisionEnter2D(col);
-		col.gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.right * accelerationForce);
+        Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+        float currMag = rb.velocity.magnitude;
+        rb.velocity = Vector3.zero;
+		rb.AddForce(this.transform.right * (accelerationForce + currMag), ForceMode2D.Impulse);
 	}
 }
