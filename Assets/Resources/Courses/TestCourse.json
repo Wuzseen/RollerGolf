@@ -3,6 +3,11 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Mount Doom",
+			"HoleSceneName" : "mtDoom",
+			"Par" : 8
+		},
+		{
 			"HoleName" : "Dogleg",
 			"HoleSceneName" : "dogleg",
 			"Par" : 15
