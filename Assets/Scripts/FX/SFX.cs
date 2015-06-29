@@ -14,14 +14,15 @@ public class SFX : MonoBehaviour {
         Ball.OnGroundImpact += Ball_OnGroundImpact;
     }
 
-    void Ball_OnGroundImpact(Vector3 point) {
-        PlayFX(bumps);
-    }
-
     void OnDestroy() {
         Ball.OnWaterHit -= Ball_OnWaterHit;
         Ball.OnGroundImpact -= Ball_OnGroundImpact;
-    }
+	}
+	
+	void Ball_OnGroundImpact(Vector3 point) {
+		print ("BUMP");
+		PlayFX(bumps);
+	}
 
     void Ball_OnWaterHit(Vector3 point) {
         PlayFX(waterSplashes);
@@ -32,7 +33,8 @@ public class SFX : MonoBehaviour {
     }
 
     void PlayFX(AudioClip clip) {
-        source.clip = clip;
-        source.Play();
+		SoundManager.PlaySFX(clip);
+//        source.clip = clip;
+//        source.Play();
     }
 }
