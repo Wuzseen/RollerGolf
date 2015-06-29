@@ -22,6 +22,9 @@ public class Accelerator : Placeable {
 	protected override void OnCollisionEnter2D(Collision2D col)
 	{
 		base.OnCollisionEnter2D(col);
-		col.gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.right * accelerationForce);
+        Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+        float currMag = rb.velocity.magnitude;
+        rb.velocity = Vector3.zero;
+		rb.AddForce(this.transform.right * (accelerationForce + currMag), ForceMode2D.Impulse);
 	}
 }
