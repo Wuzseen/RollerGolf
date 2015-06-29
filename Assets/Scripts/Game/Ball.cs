@@ -13,7 +13,6 @@ public class Ball : MonoBehaviour {
         if (collision.CompareTag(GameConsts.TAG_WATER)) {
             Raise(OnWaterHit, this.transform.position);
 		} else if(collision.CompareTag(GameConsts.TAG_HOLE)) {
-			print ("TAG");
 			Raise (OnHoleHit, this.transform.position);
 		}
     }
