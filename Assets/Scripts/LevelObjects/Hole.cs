@@ -7,7 +7,8 @@ public class Hole : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.CompareTag(GameConsts.TAG_BALL)) {
-			print ("Ball hit hole");
+			other.transform.parent = this.transform;
+			other.transform.localPosition = Vector3.zero;
 			if(OnObjectiveReached != null) {
 				OnObjectiveReached();
 			}
