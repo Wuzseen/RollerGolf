@@ -7,6 +7,8 @@ public class CourseHandler : MonoBehaviour {
 	public static event GameEvent OnPlacementBegin, OnPlacementEnd;
 	public static event GameEvent OnActionBegin, OnActionEnd;
 
+	public AudioClip applause;
+
 	private int holeIndex = 0;
 
 	private CourseData course;
@@ -28,8 +30,10 @@ public class CourseHandler : MonoBehaviour {
 		ObjectPlacer.OnConfirm -= ConfirmPlacement;
 	}
 
+	private bool success = false;
 	void HandleOnObjectiveReached () {
 		inHole = false;
+		success = true;
 		EndAction();
 	}
 
@@ -81,10 +85,15 @@ public class CourseHandler : MonoBehaviour {
 		yield return null;
 		print ("Hole begun");
 		inHole = true;
+		success = false;
 		Raise (OnHoleBegin);
 		while(inHole && playing) {
 			if(playing) yield return StartCoroutine(PlacementPhase());
 			if(playing) yield return StartCoroutine(ActionPhase());
+		}
+		if(success) {
+			SoundManager.PlaySFX(applause);
+			yield return new WaitForSeconds(applause.length);
 		}
 		Raise (OnHoleEnd);
 		print ("Hole end");
