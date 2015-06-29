@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class Cannon : MonoBehaviour {
 	public float rotateSpeed = 15f;
@@ -60,7 +61,10 @@ public class Cannon : MonoBehaviour {
 	}
 
 	IEnumerator CannonShotRoutine () {
-		
+		turretBase.DOScaleX(.6f,.2f);
+		yield return new WaitForSeconds(.2f);
+		turretBase.DOScaleX(1f,.2f);
+		yield return new WaitForSeconds(.2f);
 		ball.transform.localPosition = new Vector3(0,0,-1);
 		ball.transform.parent = null;
 		ball.isKinematic = false;
@@ -68,7 +72,6 @@ public class Cannon : MonoBehaviour {
 		ball.transform.position = spawnPoint.position;
 		ball.AddForce(shotDirection * force);
 		SoundManager.PlaySFX(cannonShots[Random.Range(0,cannonShots.Length)]);
-		yield return null;
 	}
 
 	Vector2 shotDirection {
