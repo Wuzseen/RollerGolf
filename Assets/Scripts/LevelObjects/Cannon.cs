@@ -7,6 +7,7 @@ public class Cannon : MonoBehaviour {
 	public float force = 30f;
 	public Rigidbody2D ball;
 	public Transform turretBase, turretEnd, spawnPoint;
+	public ParticleSystem particles;
 
 	public AudioClip[] cannonShots;
 
@@ -71,6 +72,8 @@ public class Cannon : MonoBehaviour {
 		ball.velocity = Vector2.zero;
 		ball.transform.position = spawnPoint.position;
 		ball.AddForce(shotDirection * force);
+		Camera.main.transform.DOShakePosition(.2f,2f);
+		particles.Emit (30);
 		SoundManager.PlaySFX(cannonShots[Random.Range(0,cannonShots.Length)]);
 	}
 
