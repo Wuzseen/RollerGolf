@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class AddObjectGUIHandler : MonoBehaviour {
+public class AddObjectGUIHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 	public Text buttonText;
 	public Image theImage;
+    public CanvasGroup grp;
 
 	public GameObject myGameObject;
 
@@ -32,4 +34,12 @@ public class AddObjectGUIHandler : MonoBehaviour {
 		spawnedObject.transform.SetParent(GameObject.Find ("Mouse Follower").transform,false);
 		spawnedObject.GetComponent<ObjectPlacement>().beginPlacing();
 	}
+
+    public void OnPointerEnter(PointerEventData eventData) {
+        grp.alpha = 1f;
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        grp.alpha = 0f;
+    }
 }
