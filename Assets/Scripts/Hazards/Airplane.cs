@@ -15,37 +15,49 @@ public class Airplane : MonoBehaviour {
 	private Rigidbody2D rb;
 	private float randomJitter;
 
-    private Transform startingPosition;
+    private Vector3 startingPosition;
 
 	// Use this for initialization
 	void Start () {
-
-        startingPosition = this.transform;
-
 		sr = this.GetComponent<SpriteRenderer>();
 
 		randomJitter = Random.Range (-3.0f,5.0f);
 
 		moveSpeed += randomJitter;
-		//rb = this.GetComponent<Rigidbody2D>();
 	}
-	
+
+    void OnEnable()
+    {
+        CourseHandler.OnHoleBegin += HandleOnHoleBegin;
+    }
+
+    void OnDisable()
+    {
+        CourseHandler.OnHoleBegin -= HandleOnHoleBegin;
+    }
+
+    void HandleOnHoleBegin()
+    {
+        startingPosition = this.transform.position;
+    }
+
 	// Update is called once per frame
 	void Update () {
 
         float newRot = Mathf.Cos (Time.time)*(maxGainAngle + randomJitter);
-		this.transform.position += (this.transform.right * moveSpeed * Time.deltaTime);
+		this.transform.position += ((this.transform.right * moveSpeed) * Time.deltaTime);
 		this.transform.Rotate(new Vector3(0,0,newRot) * Time.deltaTime);
 
-		if(this.transform.position.x < leftBound || this.transform.position.x > rightBound) {
+        if((this.transform.position.x < leftBound || this.transform.position.x > rightBound)) {
 			switchSprite();
+            moveSpeed *= -1;
 
-            this.transform.position = new Vector3(this.transform.position.x, startingPosition.transform.position.y, this.transform.position.z);
-
-			moveSpeed *= -1;
+            Vector3 target = new Vector3(this.transform.position.x, startingPosition.y, this.transform.position.z);
+            this.transform.position = target;
 		}
 
 	}
+
 
 	private void switchSprite()
 	{
