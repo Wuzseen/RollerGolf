@@ -248,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 294.5, y: 80.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467808}
@@ -478,6 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 156892, guid: 507a4aa90092223448b20a529e7b7f9d, type: 2}
+  soundtrack: {fileID: 130426, guid: fdce7845569d642b1aa5bbe6bf945de1, type: 2}
   courseManager: {fileID: 11490756}
 --- !u!114 &11437712
 MonoBehaviour:

@@ -206,7 +206,7 @@ MonoBehaviour:
     minDelay: 0
     maxDelay: 0
     delay: 0
-  crossDuration: 5
+  crossDuration: 2
   showDebug: 0
   offTheBGM: 0
   isPaused: 0
@@ -238,6 +238,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: showDebug
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: crossDuration
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
