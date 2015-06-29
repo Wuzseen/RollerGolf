@@ -6,7 +6,7 @@ public class sPipe : Placeable {
 	public Transform other;
 	
 	[SerializeField]
-	private float slowDownFactor = 0.50f;
+	private float launchVelocity = 8.0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -30,11 +30,11 @@ public class sPipe : Placeable {
 			base.OnCollisionEnter2D(null);
 			col.gameObject.transform.position = other.position;
 
-			Vector3 x = other.transform.up * col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * slowDownFactor;
-			
-			col.gameObject.GetComponent<Rigidbody2D>().velocity = x;
+            Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
 
-			//col.gameObject.GetComponent<Rigidbody2D>().velocity *= slowDownFactor;
+            col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+            rb.AddForce(other.transform.up * launchVelocity, ForceMode2D.Impulse);
 		}
 	}
 }
