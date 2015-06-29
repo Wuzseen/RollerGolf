@@ -150,6 +150,17 @@ public class CameraController : MonoBehaviour {
 		while(actionCam) {
 			Vector3 start = transform.position;
 			Vector3 end = Vector3.MoveTowards(start, target.position, followSpeed * Time.deltaTime);
+			Vector3 direction = end-start;
+			if(direction.x > 0 && CameraExtents.Instance.RestrictRight()) {
+				end.x = start.x;
+			} else if(direction.x < 0 && CameraExtents.Instance.RestrictLeft()) {
+				end.x = start.x;
+			}
+			if(direction.y < 0 && CameraExtents.Instance.RestrictDown()) {
+				end.y = start.y;
+			} else if(direction.y > 0 && CameraExtents.Instance.RestrictUp()) {
+				end.y = start.y;
+			}
 			end.z = start.z;
 			transform.position = end;
 			
