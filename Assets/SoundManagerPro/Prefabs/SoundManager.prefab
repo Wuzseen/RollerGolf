@@ -185,6 +185,13 @@ MonoBehaviour:
   showList: 1
   showAdd: 1
   showSFX: 1
+  showSFXDetails: 
+  groupAddIndex: 0
+  autoPrepoolAmount: 0
+  autoBaseVolume: 1
+  autoVolumeVariation: 0
+  autoPitchVariation: 0
+  showAsGrouped: 0
   soundConnections: []
   audios:
   - {fileID: 8200002}
@@ -194,32 +201,44 @@ MonoBehaviour:
     level: 
     isCustomLevel: 0
     soundsToPlay: []
+    baseVolumes: []
     playMethod: 0
     minDelay: 0
     maxDelay: 0
     delay: 0
   crossDuration: 5
-  showDebug: 1
+  showDebug: 0
   offTheBGM: 0
   isPaused: 0
   movingOnFromSong: 0
+  ignoreLevelLoad: 0
   resourcesPath: 536f756e64732f534658
   storedSFXs: []
-  ownedSFXObjects: []
   unOwnedSFXObjects: []
   sfxGroups: []
   clipToGroupKeys: []
   clipToGroupValues: []
-  mCurrentOwnedSFXObject: 0
   offTheSFX: 0
   capAmount: 3
+  sfxPrePoolAmounts: 
+  sfxBaseVolumes: []
+  sfxVolumeVariations: []
+  sfxPitchVariations: []
+  SFXObjectLifetime: 10
+  currentPockets:
+  - Default
+  defaultSFXSpatialBlend: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: showDebug
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
