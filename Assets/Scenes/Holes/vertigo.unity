@@ -1160,7 +1160,7 @@ Transform:
   - {fileID: 1086510145}
   - {fileID: 1638484007}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!43 &1514669826
 Mesh:
   m_ObjectHideFlags: 0
@@ -1715,12 +1715,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 426940, guid: a05a716ed9ac0443e95818e943be4c0f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11460910, guid: a05a716ed9ac0443e95818e943be4c0f, type: 2}
       propertyPath: ball
       value: 
       objectReference: {fileID: 886732710}
+    - target: {fileID: 426940, guid: a05a716ed9ac0443e95818e943be4c0f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a05a716ed9ac0443e95818e943be4c0f, type: 2}
   m_IsPrefabParent: 0
