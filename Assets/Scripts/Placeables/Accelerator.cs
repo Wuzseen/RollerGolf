@@ -4,9 +4,6 @@ using System.Collections;
 
 public class Accelerator : Placeable {
 
-	[SerializeField]
-	public int direction = 1;
-	[SerializeField]
 	public float accelerationForce = 10.0f;
 
 	// Use this for initialization
