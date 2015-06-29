@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Accelerator : MonoBehaviour {
+public class Accelerator : Placeable {
 
 	[SerializeField]
 	public int direction = 1;
@@ -19,8 +19,9 @@ public class Accelerator : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D col)
+	protected override void OnCollisionEnter2D(Collision2D col)
 	{
+		base.OnCollisionEnter2D(col);
 		col.gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.right * accelerationForce);
 	}
 }

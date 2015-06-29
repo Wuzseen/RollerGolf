@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StickyWall : MonoBehaviour {
+public class StickyWall : Placeable {
 
 	[SerializeField]
 	public float slowFactor = .25f;
@@ -16,8 +16,9 @@ public class StickyWall : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D col)
+	protected override void OnCollisionEnter2D(Collision2D col)
 	{
+		base.OnCollisionEnter2D(col);
 		col.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		col.gameObject.GetComponent<Rigidbody2D>().gravityScale = slowFactor;
 	}

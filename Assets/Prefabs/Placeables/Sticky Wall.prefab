@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9916d61dfe9105e4d8d7583656921b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collideClip: {fileID: 8300000, guid: c4dc7f6832f074f6984e53fc8a3449ef, type: 3}
   slowFactor: .125
 --- !u!114 &11408174
 MonoBehaviour:
@@ -156,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationDegree: 10
   placing: 0
+  keepUpright: 0
 --- !u!212 &21262584
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -225,6 +227,10 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: collideClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c4dc7f6832f074f6984e53fc8a3449ef, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165822}

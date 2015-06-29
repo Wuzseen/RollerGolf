@@ -11,16 +11,12 @@ public class Airplane : MonoBehaviour {
 
 	public float leftBound, rightBound;
 
-	private Vector3 myPos;
-
 	private SpriteRenderer sr;
 	private Rigidbody2D rb;
 	private float randomJitter;
 
 	// Use this for initialization
 	void Start () {
-
-		Vector3 myPos = this.transform.position;
 		sr = this.GetComponent<SpriteRenderer>();
 
 		randomJitter = Random.Range (-3.0f,5.0f);
