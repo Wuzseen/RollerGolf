@@ -23,3 +23,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Holes/basicHole2.unity
   - enabled: 1
     path: Assets/Scenes/Holes/vertigo.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/dogleg.unity

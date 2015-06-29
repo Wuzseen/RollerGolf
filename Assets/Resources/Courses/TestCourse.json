@@ -3,6 +3,11 @@
 	"ImageName" : "Default",
 	"Holes" : [
 		{
+			"HoleName" : "Dogleg",
+			"HoleSceneName" : "dogleg",
+			"Par" : 15
+		},
+		{
 			"HoleName" : "Water Hazard",
 			"HoleSceneName" : "hole3",
 			"Par" : 25
