@@ -428,6 +428,11 @@ MonoBehaviour:
   waterSplashes:
   - {fileID: 8300000, guid: 77cf083c0d971ed40824d6a8b739a131, type: 3}
   - {fileID: 8300000, guid: 503e717ee0c493a46840b349fedf81e8, type: 3}
+  bumps:
+  - {fileID: 8300000, guid: c517eca3fd13c6e4ebd10c9c80bc36be, type: 3}
+  - {fileID: 8300000, guid: 8aec2cf366c178a4d8b470bf51486551, type: 3}
+  - {fileID: 8300000, guid: 629cd766cb5676c44a08df1183b2e502, type: 3}
+  - {fileID: 8300000, guid: cea6399c3dac4d94ca7d6e5ce2b63c70, type: 3}
 --- !u!114 &11411508
 MonoBehaviour:
   m_ObjectHideFlags: 1
