@@ -13,12 +13,17 @@ public class Game : MonoBehaviour {
 
 	public GameObject ui;
 
+	public GameObject soundtrack;
+
 	public CourseHandler courseManager;
 
 	void Awake() {
 		if(instance != null) {
 			Destroy(this.gameObject);
 			return;
+		}
+		if(SoundTrackController.Instance == null) {
+			Instantiate(soundtrack);
 		}
 		instance = this;
 		if(SelectedCourse == null) {
@@ -27,6 +32,10 @@ public class Game : MonoBehaviour {
 		}
 		courseManager.BeginNewCourse(SelectedCourse);
 		ScoreCard.OnRetirePressed += HandleOnRetirePressed;
+	}
+
+	private void SongEnd() {
+
 	}
 
 	void OnDestroy() {
