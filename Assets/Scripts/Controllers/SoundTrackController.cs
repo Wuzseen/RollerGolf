@@ -6,6 +6,8 @@ public class SoundTrackController : MonoBehaviour {
 
 	public static SoundTrackController Instance;
 
+    public float musicVolume;
+
 	void Awake() {
 		if(Instance != null) {
 			Destroy(this.gameObject);
@@ -14,6 +16,7 @@ public class SoundTrackController : MonoBehaviour {
 		SoundManager.Instance.showDebug = false;
         SoundManager.SetIgnoreLevelLoad(true);
 		SoundManager.SetCrossDuration(2f);
+        SoundManager.SetVolumeMusic(musicVolume);
 		Instance = this;
 		PlayRandomSong();
 	}

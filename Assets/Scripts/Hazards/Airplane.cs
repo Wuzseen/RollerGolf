@@ -17,6 +17,8 @@ public class Airplane : MonoBehaviour {
 
     private Vector3 startingPosition;
 
+    private float rotationFactor = 0;
+
 	// Use this for initialization
 	void Start () {
 		sr = this.GetComponent<SpriteRenderer>();
@@ -24,6 +26,7 @@ public class Airplane : MonoBehaviour {
 		randomJitter = Random.Range (-3.0f,5.0f);
 
 		moveSpeed += randomJitter;
+
 	}
 
     void OnEnable()
@@ -43,17 +46,22 @@ public class Airplane : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-        float newRot = Mathf.Cos (Time.time)*(maxGainAngle + randomJitter);
+        rotationFactor += Time.deltaTime;
+        float newRot = Mathf.Cos (rotationFactor)*(maxGainAngle + randomJitter);
 		this.transform.position += ((this.transform.right * moveSpeed) * Time.deltaTime);
 		this.transform.Rotate(new Vector3(0,0,newRot) * Time.deltaTime);
 
         if((this.transform.position.x < leftBound || this.transform.position.x > rightBound)) {
 			switchSprite();
             moveSpeed *= -1;
-
             Vector3 target = new Vector3(this.transform.position.x, startingPosition.y, this.transform.position.z);
+            this.transform.rotation = Quaternion.Euler(Vector3.zero);
             this.transform.position = target;
+            //this.transform.position += this.transform.right * moveSpeed * Random.Range(1.0f, 1.5f);
+
+            //maxGainAngle *= Random.RandomRange(0.9f, 1.1f);
+
+            rotationFactor = 0;
 		}
 
 	}
