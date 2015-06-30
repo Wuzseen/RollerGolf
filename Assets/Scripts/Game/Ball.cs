@@ -31,6 +31,11 @@ public class Ball : MonoBehaviour {
     }
 
     public void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("testGround"))
+        {
+            Debug.Log("Yo dawg, this layer collision stuff works.");
+        }
+
         Raise (OnGroundImpact, collision.contacts[0].point);
     }
 
