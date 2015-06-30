@@ -390,7 +390,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 991a5c9774dc2b74c9d5ef426b435bf0, type: 2}
   renderData: {fileID: 1356779243}
   spriteCollection: {fileID: 11400440, guid: d24de40c8fd3d9d48a4f36c736a01e2d, type: 2}
-  spriteCollectionKey: 399777029
+  spriteCollectionKey: 1357657737
   width: 64
   height: 64
   partitionSizeX: 32
@@ -956,7 +956,7 @@ GameObject:
   - 33: {fileID: 414630389}
   - 23: {fileID: 414630388}
   - 68: {fileID: 414630390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chunk 1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1096,7 +1096,7 @@ GameObject:
   - 33: {fileID: 554775441}
   - 23: {fileID: 554775440}
   - 68: {fileID: 554775442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chunk 1 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ GameObject:
   - 33: {fileID: 591565867}
   - 23: {fileID: 591565866}
   - 68: {fileID: 591565869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chunk 0 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2129,7 +2129,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1151099954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collisionLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2808,7 +2808,7 @@ GameObject:
   - 33: {fileID: 1768059449}
   - 23: {fileID: 1768059448}
   - 68: {fileID: 1768059450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chunk 0 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

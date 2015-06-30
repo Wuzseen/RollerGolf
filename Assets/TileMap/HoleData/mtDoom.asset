@@ -33,6 +33,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 130210, guid: 4af587a93d7d91b4186b709d2f471066, type: 2}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tileInfo:
   - stringVal: 
     intVal: 0
@@ -125,18 +127,7 @@ MonoBehaviour:
     useColor: 1
     generateCollider: 1
     z: .100000001
-    unityLayer: 0
-    sortingLayerName: 
-    sortingOrder: 0
-    skipMeshGeneration: 0
-    physicMaterial: {fileID: 0}
-    physicsMaterial2D: {fileID: 0}
-  - name: Out Of Bounds
-    hash: 1602248807
-    useColor: 1
-    generateCollider: 1
-    z: .100000001
-    unityLayer: 0
+    unityLayer: 8
     sortingLayerName: 
     sortingOrder: 0
     skipMeshGeneration: 0

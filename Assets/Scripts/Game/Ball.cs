@@ -29,12 +29,13 @@ public class Ball : MonoBehaviour {
     }
 
     public void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("testGround"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer(GameConsts.LAYER_GROUND))
         {
             Debug.Log("Yo dawg, this layer collision stuff works.");
+            Raise(OnGroundImpact, collision.contacts[0].point);
         }
 
-        Raise (OnGroundImpact, collision.contacts[0].point);
+        //Raise (OnGroundImpact, collision.contacts[0].point);
     }
 
     public void OnTriggerEnter2D(Collider2D collision) {
