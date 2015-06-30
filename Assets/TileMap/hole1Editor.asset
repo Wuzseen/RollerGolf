@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b78d6060eadde4394ed1d0ba2b8c97, type: 3}
   m_Name: hole1Editor
   m_EditorClassIdentifier: 
-  editMode: 3
+  editMode: 0
   brushColor: {r: 1, g: 1, b: 1, a: 1}
   brushRadius: 1
   blendStrength: 1
@@ -34,19 +34,19 @@ MonoBehaviour:
     brushHash: -1852224960
   activeBrush:
     name: 
-    type: 3
+    type: 0
     paintMode: 0
     tiles:
     - x: 0
       y: 0
       layer: 0
-      spriteId: -1
+      spriteId: 2
       blendAmount: 0
-    multiSelectTiles: ffffffff
+    multiSelectTiles: 02000000
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: 559048003
+    brushHash: -588449472
   brushes: []
   paletteBrush:
     name: 
@@ -77,7 +77,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: -263620864
+    brushHash: 956204544
   paletteTilesPerRow: 5
   setupMode: 32
   showBrush: 1
