@@ -5,7 +5,12 @@
 		{
 			"HoleName" : "Puddle",
 			"HoleSceneName" : "puddle",
-			"Par" : 3
+			"Par" : 1
+		},
+		{
+			"HoleName" : "The Rock",
+			"HoleSceneName" : "floatingRock",
+			"Par" : 10
 		},
 		{
 			"HoleName" : "Flight of the Valkyries",
@@ -26,11 +31,6 @@
 			"HoleName" : "Vertigo",
 			"HoleSceneName" : "vertigo",
 			"Par" : 12
-		},
-		{
-			"HoleName" : "Shoot the Moon",
-			"HoleSceneName" : "hole1",
-			"Par" : 10
 		},
 		{
 			"HoleName" : "Mount Doom",
