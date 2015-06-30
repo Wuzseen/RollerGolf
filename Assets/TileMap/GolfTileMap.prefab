@@ -64,7 +64,7 @@ MonoBehaviour:
   atlasWidth: 256
   atlasHeight: 512
   forceSquareAtlas: 0
-  atlasWastage: 18.347168
+  atlasWastage: 28.2348633
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
@@ -565,7 +565,7 @@ MonoBehaviour:
     colliderType: 4
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
+    boxColliderMax: {x: 64, y: 64}
     polyColliderIslands:
     - connected: 1
       points:
@@ -621,11 +621,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: groundTop
+  - name: sandTile
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 389df866376e0477c9f7f66a5234c60e, type: 3}
+    texture: {fileID: 2800000, guid: 31d9369d5eaaa174d86cce5e7e617be4, type: 3}
     materialId: 0
     anchor: 6
     anchorX: 0
@@ -652,21 +652,21 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 3
+    colliderType: 0
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 64, y: 64}
+    boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: groundSlant
+  - name: sandTop
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 5879997762e0e4f4391058b4b4cdc20f, type: 3}
+    texture: {fileID: 2800000, guid: a2a933c6253f1d24f95292eca6a0f171, type: 3}
     materialId: 0
     anchor: 6
     anchorX: 0
@@ -695,96 +695,20 @@ MonoBehaviour:
     regionId: 0
     colliderType: 4
     colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 2}
+    boxColliderMax: {x: 64, y: 64}
     polyColliderIslands:
     - connected: 1
       points:
+      - {x: 47.5, y: 4.5}
+      - {x: 38, y: 2.5}
+      - {x: 25.5, y: 5}
+      - {x: 15.5, y: 2.5}
+      - {x: 6.5, y: 4.5}
+      - {x: 0, y: 3}
       - {x: 0, y: 64}
       - {x: 64, y: 64}
-      - {x: 64, y: 0}
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: groundFill
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 464cf919244e045a7b14020d95c06859, type: 3}
-    materialId: 0
-    anchor: 6
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 0
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 0
-    spriteSheetId: 0
-    spriteSheetX: 0
-    spriteSheetY: 0
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    regionId: 0
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: crater
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: bd9cbbfca76df4561a409d6ccaffb7ef, type: 3}
-    materialId: 0
-    anchor: 6
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 0
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 0
-    spriteSheetId: 0
-    spriteSheetX: 0
-    spriteSheetY: 0
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    regionId: 0
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
+      - {x: 64, y: 2}
     polyColliderCap: 1
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
@@ -824,7 +748,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: 8
   autoUpdate: 1
-  editorDisplayScale: 1
+  editorDisplayScale: 6.58000278
   version: 4
   assetName: 
   linkedSpriteCollections: []

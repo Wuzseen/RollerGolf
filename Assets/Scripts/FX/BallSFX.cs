@@ -8,11 +8,13 @@ public class BallSFX : MonoBehaviour {
 
 	void Awake () {
         Ball.OnWaterHit += Ball_OnWaterHit;
+        Ball.OnSandHit += Ball_OnSandHit;
         Ball.OnGroundImpact += Ball_OnGroundImpact;
     }
 
     void OnDestroy() {
         Ball.OnWaterHit -= Ball_OnWaterHit;
+        Ball.OnSandHit -= Ball_OnSandHit;
         Ball.OnGroundImpact -= Ball_OnGroundImpact;
 	}
 	
@@ -23,6 +25,11 @@ public class BallSFX : MonoBehaviour {
 
     void Ball_OnWaterHit(Vector3 point) {
         PlayFX(waterSplashes);
+    }
+
+    private void Ball_OnSandHit(Vector3 point)
+    {
+        throw new System.NotImplementedException();
     }
 
     void PlayFX(AudioClip[] collection) {

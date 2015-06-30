@@ -2,19 +2,27 @@
 using System.Collections;
 
 public class BallParticles : MonoBehaviour {
-    public ParticleSystem water, confetti;
+    public ParticleSystem water, sand, confetti;
     public int waterCount = 30;
 	public int confettiCount = 30;
+    public int sandCount;
 
     void Awake() {
         Ball.OnWaterHit += Ball_OnWaterHit;
+        Ball.OnSandHit += Ball_OnSandHit;
 		Ball.OnHoleHit += HandleOnHoleHit;
 	}
 
-	void OnDestroy() {
+   void OnDestroy() {
 		Ball.OnWaterHit -= Ball_OnWaterHit;
+        Ball.OnSandHit -= Ball_OnSandHit;
 		Ball.OnHoleHit -= HandleOnHoleHit;
 	}
+
+   private void Ball_OnSandHit(Vector3 point)
+   {
+       PositionAndEmit(point, sand, sandCount);
+   }
 
     void HandleOnHoleHit (Vector3 point) {
 		PositionAndEmit(point, confetti, confettiCount);
