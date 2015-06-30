@@ -5,9 +5,11 @@ public class Ball : MonoBehaviour {
     public delegate void BallCollisionEvent(Vector3 point);
     public static event BallCollisionEvent OnWaterHit, OnSandHit, OnGroundImpact, OnHoleHit;
 
+	public float gravityScale = 1f;
 
     void OnEnable()
     {
+		this.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
         CourseHandler.OnPlacementBegin += HandleOnPlacementBegin;
         CourseHandler.OnPlacementEnd += HandleOnPlacementEnd;
     }
