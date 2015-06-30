@@ -119,3 +119,14 @@ MonoBehaviour:
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
     physicsMaterial2D: {fileID: 0}
+  - name: Ground
+    hash: 865065529
+    useColor: 1
+    generateCollider: 1
+    z: .100000001
+    unityLayer: 8
+    sortingLayerName: 
+    sortingOrder: 0
+    skipMeshGeneration: 0
+    physicMaterial: {fileID: 0}
+    physicsMaterial2D: {fileID: 0}
