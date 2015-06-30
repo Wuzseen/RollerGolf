@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &153194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 424320}
+  - 114: {fileID: 11401762}
+  m_Layer: 0
+  m_Name: SpaceGolfMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424320
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11401762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: groundTop
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .00781640597}
+    - {x: .257808596, y: .00781640597}
+    - {x: .00781640597, y: .257808596}
+    - {x: .257808596, y: .257808596}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0f3826a5a813b4ebb98be39e2b57131a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 389df866376e0477c9f7f66a5234c60e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: .5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: groundSlant
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .273441404}
+    - {x: .257808596, y: .273441404}
+    - {x: .00781640597, y: .523433566}
+    - {x: .257808596, y: .523433566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0f3826a5a813b4ebb98be39e2b57131a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 5879997762e0e4f4391058b4b4cdc20f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 3
+    customColliders: []
+    colliderVertices:
+    - {x: 0, y: 0, z: -.100000001}
+    - {x: 0, y: 0, z: .100000001}
+    - {x: 1, y: 0, z: -.100000001}
+    - {x: 1, y: 0, z: .100000001}
+    - {x: 1, y: 1, z: -.100000001}
+    - {x: 1, y: 1, z: .100000001}
+    colliderIndicesFwd: 020000000100000000000000020000000300000001000000040000000300000002000000040000000500000003000000000000000100000004000000040000000100000005000000020000000000000004000000050000000100000003000000
+    colliderIndicesBack: 000000000100000002000000010000000300000002000000020000000300000004000000030000000500000004000000040000000100000000000000050000000100000004000000040000000000000002000000030000000100000005000000
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D:
+    - points:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+    edgeCollider2D: []
+    attachPoints: []
+  - name: groundFill
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .539066434}
+    - {x: .257808596, y: .539066434}
+    - {x: .00781640597, y: .789058566}
+    - {x: .257808596, y: .789058566}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0f3826a5a813b4ebb98be39e2b57131a, type: 2}
+    materialId: 0
+    sourceTextureGUID: 464cf919244e045a7b14020d95c06859
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: crater
+    boundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: .5, y: .5, z: 0}
+    - {x: 1, y: 1, z: 0}
+    texelSize: {x: .015625, y: .015625}
+    positions:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: 0, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .273441404, y: .00781640597}
+    - {x: .523433566, y: .00781640597}
+    - {x: .273441404, y: .257808596}
+    - {x: .523433566, y: .257808596}
+    normalizedUvs:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 0f3826a5a813b4ebb98be39e2b57131a, type: 2}
+    materialId: 0
+    sourceTextureGUID: bd9cbbfca76df4561a409d6ccaffb7ef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 0f3826a5a813b4ebb98be39e2b57131a, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 3d0ae7f42b6684fa2a96ae0d0b741b33, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: db6aedf6afaa0493687083ac84d651d5
+  spriteCollectionName: SpaceGolfMap
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 32
+  buildKey: 1677261492
+  dataGuid: 86c2765fe1c4c484f9a1027f25a4be13
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 153194}
+  m_IsPrefabParent: 1

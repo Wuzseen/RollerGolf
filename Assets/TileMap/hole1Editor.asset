@@ -34,19 +34,19 @@ MonoBehaviour:
     brushHash: -1852224960
   activeBrush:
     name: 
-    type: 3
+    type: 0
     paintMode: 0
     tiles:
     - x: 0
       y: 0
       layer: 0
-      spriteId: -1
+      spriteId: 2
       blendAmount: 0
-    multiSelectTiles: ffffffff
+    multiSelectTiles: 02000000
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: -1006209405
+    brushHash: -2051488128
   brushes: []
   paletteBrush:
     name: 
@@ -54,88 +54,33 @@ MonoBehaviour:
     paintMode: 0
     tiles:
     - x: 0
-      y: 2
+      y: 0
       layer: 0
       spriteId: 0
       blendAmount: 0
     - x: 1
-      y: 2
+      y: 0
       layer: 0
       spriteId: 1
       blendAmount: 0
     - x: 2
-      y: 2
+      y: 0
       layer: 0
       spriteId: 2
       blendAmount: 0
     - x: 3
-      y: 2
+      y: 0
       layer: 0
       spriteId: 3
-      blendAmount: 0
-    - x: 4
-      y: 2
-      layer: 0
-      spriteId: 4
-      blendAmount: 0
-    - x: 0
-      y: 1
-      layer: 0
-      spriteId: 5
-      blendAmount: 0
-    - x: 1
-      y: 1
-      layer: 0
-      spriteId: 6
-      blendAmount: 0
-    - x: 2
-      y: 1
-      layer: 0
-      spriteId: 7
-      blendAmount: 0
-    - x: 3
-      y: 1
-      layer: 0
-      spriteId: 8
-      blendAmount: 0
-    - x: 4
-      y: 1
-      layer: 0
-      spriteId: 9
-      blendAmount: 0
-    - x: 0
-      y: 0
-      layer: 0
-      spriteId: 10
-      blendAmount: 0
-    - x: 1
-      y: 0
-      layer: 0
-      spriteId: 11
-      blendAmount: 0
-    - x: 2
-      y: 0
-      layer: 0
-      spriteId: 12
-      blendAmount: 0
-    - x: 3
-      y: 0
-      layer: 0
-      spriteId: 13
-      blendAmount: 0
-    - x: 4
-      y: 0
-      layer: 0
-      spriteId: 14
       blendAmount: 0
     multiSelectTiles: 
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: -882451896
+    brushHash: 1222292480
   paletteTilesPerRow: 5
   setupMode: 32
   showBrush: 1
   showPalette: 1
-  layer: 1
+  layer: 2
   scratchpads: []
