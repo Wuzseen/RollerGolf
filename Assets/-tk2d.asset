@@ -755,16 +755,25 @@ MonoBehaviour:
     - groundSlant
     - groundFill
     - crater
+    - star1
+    - star2
+    - star3
     spriteTextureGUIDs:
     - 389df866376e0477c9f7f66a5234c60e
     - 5879997762e0e4f4391058b4b4cdc20f
     - 464cf919244e045a7b14020d95c06859
     - bd9cbbfca76df4561a409d6ccaffb7ef
+    - ba7e2a18210f84c7aa2bf6cc3255df4a
+    - 73c28a9ea31cb441ba37a3792630a53c
+    - 3c0329e81a4f54025b0c4e31b9aa6216
     spriteTextureTimeStamps:
     - 1435677623
     - 1435680912
     - 1435677278
     - 1435677210
+    - 1435682409
+    - 1435682351
+    - 1435682374
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
