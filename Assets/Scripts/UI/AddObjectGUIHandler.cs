@@ -28,7 +28,7 @@ public class AddObjectGUIHandler : MonoBehaviour, IPointerEnterHandler, IPointer
 	public void onButtonClick()
 	{
 		if(ObjectPlacement.CurrentPlaceable != null) {
-			return;
+            Destroy(ObjectPlacement.CurrentPlaceable);
 		}
 		GameObject spawnedObject = (GameObject)Instantiate(myGameObject);
 		spawnedObject.transform.SetParent(GameObject.Find ("Mouse Follower").transform,false);

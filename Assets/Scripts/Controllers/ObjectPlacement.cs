@@ -29,7 +29,8 @@ public class ObjectPlacement : MonoBehaviour {
 		valid = true;
 	}
 
-	void OnDestroy() {
+    void OnDestroy() {
+        Raise(OnObjectRemoved);
 		CourseHandler.OnActionBegin -= HandleOnActionBegin;
 		CourseHandler.OnActionEnd -= HandleOnActionEnd;
 	}
@@ -87,7 +88,6 @@ public class ObjectPlacement : MonoBehaviour {
 
 			if(Input.GetButtonDown("Fire2"))
 			{
-				Raise (OnObjectRemoved);
 				CurrentPlaceable = null;
 				Destroy (this.gameObject);
 				yield break;

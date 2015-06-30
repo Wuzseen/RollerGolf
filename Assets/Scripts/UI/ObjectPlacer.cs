@@ -76,6 +76,9 @@ public class ObjectPlacer : MonoBehaviour {
 	}
 
 	void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Confirm();
+        }
 		confirmButton.interactable = (ObjectPlacement.CurrentPlaceable == null);
 	}
 
