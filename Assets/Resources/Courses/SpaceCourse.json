@@ -1,0 +1,51 @@
+{
+	"Name" : "Moon Base",
+	"ImageName" : "Default",
+	"Holes" : [
+		{
+			"HoleName" : "Puddle",
+			"HoleSceneName" : "puddle",
+			"Par" : 3
+		},
+		{
+			"HoleName" : "Flight of the Valkyries",
+			"HoleSceneName" : "flightOfTheValkyries",
+			"Par" : 35
+		},
+		{
+			"HoleName" : "Water Hazard",
+			"HoleSceneName" : "hole3",
+			"Par" : 6
+		},
+		{
+			"HoleName" : "Pipe Dream",
+			"HoleSceneName" : "basicHole2",
+			"Par" : 5
+		},
+		{
+			"HoleName" : "Vertigo",
+			"HoleSceneName" : "vertigo",
+			"Par" : 12
+		},
+		{
+			"HoleName" : "Shoot the Moon",
+			"HoleSceneName" : "hole1",
+			"Par" : 10
+		},
+		{
+			"HoleName" : "Mount Doom",
+			"HoleSceneName" : "mtDoom",
+			"Par" : 8
+		},
+		{
+			"HoleName" : "Dogleg",
+			"HoleSceneName" : "dogleg",
+			"Par" : 15
+		},
+		{
+			"HoleName" : "Dream of Par",
+			"HoleSceneName" : "hole2",
+			"Par" : 20
+		}
+	]
+}

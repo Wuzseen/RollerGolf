@@ -29,3 +29,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Holes/GreenCourse/mtDoom.unity
   - enabled: 1
     path: Assets/Scenes/Holes/GreenCourse/flightOfTheValkyries.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/SpaceCourse/puddle.unity

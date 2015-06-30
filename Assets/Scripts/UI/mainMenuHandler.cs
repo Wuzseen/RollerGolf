@@ -14,6 +14,6 @@ public class mainMenuHandler : MonoBehaviour {
 	}
 
 	public void LoadGameScene() {
-		Application.LoadLevel("game");
+		Application.LoadLevel("courseLoader");
 	}
 }
