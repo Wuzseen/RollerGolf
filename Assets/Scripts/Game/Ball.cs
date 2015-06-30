@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ball : MonoBehaviour {
     public delegate void BallCollisionEvent(Vector3 point);
-    public static event BallCollisionEvent OnWaterHit, OnGroundImpact, OnHoleHit;
+    public static event BallCollisionEvent OnWaterHit, OnSandHit, OnGroundImpact, OnHoleHit;
 
 
     void OnEnable()
@@ -35,10 +35,12 @@ public class Ball : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag(GameConsts.TAG_WATER)) {
             Raise(OnWaterHit, this.transform.position);
-		} else if(collision.CompareTag(GameConsts.TAG_HOLE)) {
-			print ("TAG");
-			Raise (OnHoleHit, this.transform.position);
-		}
+        } else if (collision.CompareTag(GameConsts.TAG_SAND)) {
+            Raise(OnSandHit, this.transform.position);
+        } else if (collision.CompareTag(GameConsts.TAG_HOLE)) {
+            print("TAG");
+            Raise(OnHoleHit, this.transform.position);
+        }
     }
 
     void Raise(BallCollisionEvent anEvent, Vector3 point) {

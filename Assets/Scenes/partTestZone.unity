@@ -383,6 +383,10 @@ Prefab:
       propertyPath: m_Name
       value: SandPeak
       objectReference: {fileID: 0}
+    - target: {fileID: 130746, guid: 861e3b8f0bffc2743b4157ff3535dd85, type: 2}
+      propertyPath: m_TagString
+      value: sand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 861e3b8f0bffc2743b4157ff3535dd85, type: 2}
   m_IsPrefabParent: 0
