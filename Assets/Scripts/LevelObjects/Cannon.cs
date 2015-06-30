@@ -70,6 +70,7 @@ public class Cannon : MonoBehaviour {
 		ball.transform.parent = null;
 		ball.isKinematic = false;
 		ball.velocity = Vector2.zero;
+        ball.transform.localScale = Vector3.one;
 		ball.transform.position = spawnPoint.position;
 		ball.AddForce(shotDirection * force);
 		Camera.main.transform.DOShakePosition(.2f,2f);
