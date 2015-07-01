@@ -80,7 +80,7 @@ public class Cannon : MonoBehaviour {
 
 	Vector2 shotDirection {
 		get {
-			return (turretEnd.position - turretBase.position).normalized;
+			return spawnPoint.right;//(turretEnd.position - turretBase.position).normalized;
 		}
 	}
 }
