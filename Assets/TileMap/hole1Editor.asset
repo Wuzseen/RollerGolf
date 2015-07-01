@@ -34,19 +34,94 @@ MonoBehaviour:
     brushHash: -1852224960
   activeBrush:
     name: 
-    type: 0
+    type: 3
     paintMode: 0
     tiles:
     - x: 0
-      y: 0
+      y: 3
+      layer: 0
+      spriteId: 1
+      blendAmount: 0
+    - x: 1
+      y: 3
       layer: 0
       spriteId: 2
       blendAmount: 0
-    multiSelectTiles: 02000000
+    - x: 2
+      y: 3
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    - x: 3
+      y: 3
+      layer: 0
+      spriteId: 16777217
+      blendAmount: 0
+    - x: 0
+      y: 2
+      layer: 0
+      spriteId: 16777218
+      blendAmount: 0
+    - x: 1
+      y: 2
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    - x: 2
+      y: 2
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    - x: 3
+      y: 2
+      layer: 0
+      spriteId: 16777218
+      blendAmount: 0
+    - x: 0
+      y: 1
+      layer: 0
+      spriteId: 16777218
+      blendAmount: 0
+    - x: 1
+      y: 1
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    - x: 2
+      y: 1
+      layer: 0
+      spriteId: 2
+      blendAmount: 0
+    - x: 3
+      y: 1
+      layer: 0
+      spriteId: 16777218
+      blendAmount: 0
+    - x: 0
+      y: 0
+      layer: 0
+      spriteId: 33554433
+      blendAmount: 0
+    - x: 1
+      y: 0
+      layer: 0
+      spriteId: 33554434
+      blendAmount: 0
+    - x: 2
+      y: 0
+      layer: 0
+      spriteId: 33554434
+      blendAmount: 0
+    - x: 3
+      y: 0
+      layer: 0
+      spriteId: 50331649
+      blendAmount: 0
+    multiSelectTiles: 01000000020000000200000001000001020000010200000002000000020000010200000102000000020000000200000101000002020000020200000201000003
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: 2124783168
+    brushHash: -132834301
   brushes: []
   paletteBrush:
     name: 
@@ -92,7 +167,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: -251346109
+    brushHash: 431250499
   paletteTilesPerRow: 5
   setupMode: 32
   showBrush: 1
