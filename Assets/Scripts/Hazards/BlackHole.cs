@@ -5,14 +5,22 @@ using DG.Tweening;
 public class BlackHole : MonoBehaviour {
 	public float power = 5f;
 
+	private Color c1 = Color.blue;
+	private Color c2 = Color.red;
+
 	private CircleCollider2D collider;
 	private float maxRadius;
+
+	private SpriteRenderer renderer;
 
 
 	// Use this for initialization
 	void Start () {
 		this.collider = GetComponent<CircleCollider2D>();
 		this.maxRadius = this.collider.radius;
+		this.renderer = GetComponent<SpriteRenderer>();
+		c1 = Color.Lerp(Color.cyan,Color.green,Random.Range(0f,1f));
+		c2 = Color.Lerp(Color.red,Color.yellow,Random.Range(0f,1f));
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
@@ -22,8 +30,12 @@ public class BlackHole : MonoBehaviour {
 
 			Vector2 direction = (Vector2)((Vector2)this.transform.position - rgd.position);
 			rgd.AddForce(direction * power * Time.deltaTime);
-//			rgd.AddForce(direction * power * powerCurve.Evaluate(Mathf.Clamp(1 - (dist / maxRadius),0f,1f)));
 		}
+	}
+
+	void Update() {
+
+		this.renderer.color = Color.Lerp(c1,c2,Mathf.Sin(Time.time));
 	}
 
 //	IEnumerator RotateRoutine(Rigidbody2D other) {

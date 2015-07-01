@@ -8,6 +8,11 @@
 			"Par" : 1
 		},
 		{
+			"HoleName" : "Black Hole",
+			"HoleSceneName" : "blackHole",
+			"Par" : 8
+		},
+		{
 			"HoleName" : "The Rock",
 			"HoleSceneName" : "floatingRock",
 			"Par" : 10
@@ -16,11 +21,6 @@
 			"HoleName" : "Flight of the Valkyries",
 			"HoleSceneName" : "flightOfTheValkyries",
 			"Par" : 35
-		},
-		{
-			"HoleName" : "Water Hazard",
-			"HoleSceneName" : "hole3",
-			"Par" : 6
 		},
 		{
 			"HoleName" : "Pipe Dream",
