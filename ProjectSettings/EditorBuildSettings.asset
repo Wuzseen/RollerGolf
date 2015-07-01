@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Holes/SpaceCourse/puddle.unity
   - enabled: 1
+    path: Assets/Scenes/Holes/SpaceCourse/emptiness.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/SpaceCourse/blackHole.unity
+  - enabled: 1
+    path: Assets/Scenes/Holes/SpaceCourse/blackHoleSun.unity
+  - enabled: 1
     path: Assets/Scenes/Holes/SpaceCourse/floatingRock.unity

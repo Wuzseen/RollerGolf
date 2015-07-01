@@ -13,6 +13,11 @@
 			"Par" : 8
 		},
 		{
+			"HoleName" : "Asteroid Field",
+			"HoleSceneName" : "emptiness",
+			"Par" : 4
+		},
+		{
 			"HoleName" : "The Rock",
 			"HoleSceneName" : "floatingRock",
 			"Par" : 10
