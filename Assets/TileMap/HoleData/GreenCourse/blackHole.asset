@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb356b9a6a1da084695128b00c8721be, type: 3}
-  m_Name: mainMenu
+  m_Name: blackHole
   m_EditorClassIdentifier: 
   tileSize: {x: 1, y: 1, z: 0}
   tileOrigin: {x: 0, y: 0, z: 0}
@@ -27,17 +27,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   tileInfo: []
   tileMapLayers:
-  - name: Layer 0
+  - name: sky
     hash: 1892887448
     useColor: 1
     generateCollider: 1
@@ -48,8 +40,8 @@ MonoBehaviour:
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
     physicsMaterial2D: {fileID: 0}
-  - name: New Layer
-    hash: 1884440403
+  - name: bg
+    hash: 1471244109
     useColor: 1
     generateCollider: 1
     z: .100000001
@@ -59,3 +51,14 @@ MonoBehaviour:
     skipMeshGeneration: 0
     physicMaterial: {fileID: 0}
     physicsMaterial2D: {fileID: 0}
+  - name: collider
+    hash: 2034616148
+    useColor: 1
+    generateCollider: 1
+    z: .100000001
+    unityLayer: 8
+    sortingLayerName: 
+    sortingOrder: 0
+    skipMeshGeneration: 0
+    physicMaterial: {fileID: 0}
+    physicsMaterial2D: {fileID: 6200000, guid: d76f70ca2d090455ab6db15972dcbc87, type: 2}

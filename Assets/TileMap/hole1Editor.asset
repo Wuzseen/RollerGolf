@@ -46,7 +46,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 0
-    brushHash: 1285691008
+    brushHash: -1595217472
   brushes: []
   paletteBrush:
     name: 
@@ -92,7 +92,7 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
-    brushHash: -75039165
+    brushHash: -342555581
   paletteTilesPerRow: 5
   setupMode: 32
   showBrush: 1
