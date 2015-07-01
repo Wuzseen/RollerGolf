@@ -18,6 +18,11 @@
 			"Par" : 10
 		},
 		{
+			"HoleName" : "Black Hole Sun",
+			"HoleSceneName" : "blackHoleSun",
+			"Par" : 20
+		},
+		{
 			"HoleName" : "Flight of the Valkyries",
 			"HoleSceneName" : "flightOfTheValkyries",
 			"Par" : 35
@@ -41,11 +46,6 @@
 			"HoleName" : "Dogleg",
 			"HoleSceneName" : "dogleg",
 			"Par" : 15
-		},
-		{
-			"HoleName" : "Dream of Par",
-			"HoleSceneName" : "hole2",
-			"Par" : 20
 		}
 	]
 }
