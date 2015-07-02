@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .875, z: 0}
+  m_LocalPosition: {x: -1.5, y: .375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 443518}
@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: .5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 483512}
@@ -155,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187394}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
-  m_LocalPosition: {x: 3.5, y: .125, z: -1}
+  m_LocalPosition: {x: 1.5, y: -.375, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 424004}
@@ -168,7 +168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 4.30321407, y: .304849327, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 411234}
@@ -205,16 +205,15 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .111177444, y: .785057068}
-      - {x: .0889415741, y: .610977173}
-      - {x: .128404617, y: .358573914}
-      - {x: .27223587, y: .239383698}
-      - {x: 3.12379456, y: .244586945}
-      - {x: 3.87399864, y: .207530975}
-      - {x: 3.87399864, y: .644432068}
-      - {x: 3.7209053, y: .753025055}
-      - {x: .897167206, y: .758934021}
-      - {x: .878608704, y: .807292938}
+    - - {x: -1.88175654, y: .293073893}
+      - {x: -1.88766885, y: .116976261}
+      - {x: -1.88809109, y: -.15625}
+      - {x: -1.67905426, y: -.259290457}
+      - {x: 1.12584496, y: -.251688659}
+      - {x: 1.88175678, y: -.293073952}
+      - {x: 1.86402035, y: .176097602}
+      - {x: 1.73554373, y: .258445323}
+      - {x: -1.12626767, y: .251688659}
 --- !u!60 &6091074
 PolygonCollider2D:
   m_ObjectHideFlags: 1

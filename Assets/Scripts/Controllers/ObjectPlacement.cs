@@ -68,6 +68,7 @@ public class ObjectPlacement : MonoBehaviour {
 			if(this.transform.parent == null)
 			{
 				this.transform.parent = MouseFollow.transform;
+                this.transform.localPosition = Vector3.zero + new Vector3(0, 0, -1);
 			}
 			
 			if(Input.GetAxis("Mouse ScrollWheel") != 0 && !keepUpright)

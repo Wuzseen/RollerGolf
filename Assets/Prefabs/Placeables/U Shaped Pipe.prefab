@@ -106,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: -.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 450106}
@@ -145,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.50300002, y: .875, z: 0}
+  m_LocalPosition: {x: 1.50300002, y: .375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421750}
@@ -158,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .503000021, y: .875, z: 0}
+  m_LocalPosition: {x: -1.49699998, y: .375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493442}
@@ -205,20 +205,16 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 3.12672615, y: .74661541}
-      - {x: 3.12717438, y: .633553028}
-      - {x: 2.00112724, y: .628135204}
-      - {x: .874622345, y: .631387234}
-      - {x: .870038986, y: .749394417}
-      - {x: .125566483, y: .744040966}
-      - {x: .125566483, y: .70652771}
-      - {x: .125577927, y: .251580238}
-      - {x: .178125381, y: .156532288}
-      - {x: .28219986, y: .125213623}
-      - {x: 3.73977661, y: .113067627}
-      - {x: 3.87866402, y: .247394562}
-      - {x: 3.87443542, y: .475852966}
-      - {x: 3.8599472, y: .744040966}
+    - - {x: 1.12859631, y: .249222279}
+      - {x: 1.13340521, y: .129403949}
+      - {x: -1.12457585, y: .128164411}
+      - {x: -1.12551713, y: .257087946}
+      - {x: -1.87368584, y: .25490284}
+      - {x: -1.87854409, y: -.248820305}
+      - {x: -1.72925282, y: -.381958842}
+      - {x: 1.73411083, y: -.36252594}
+      - {x: 1.87368584, y: -.24777019}
+      - {x: 1.87854385, y: .261946201}
 --- !u!60 &6060740
 PolygonCollider2D:
   m_ObjectHideFlags: 1
