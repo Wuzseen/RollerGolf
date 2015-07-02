@@ -68,6 +68,13 @@ public class CourseHandler : MonoBehaviour {
 		}
 	}
 
+    public void LoadHole(int index)
+    {
+        HoleData hd = this.course.Holes[index];
+        if (index > this.course.Holes.Count-1) return;
+        Application.LoadLevel(hd.HoleSceneName);
+    }
+
 	void AdvanceHole() {
 		holeIndex++;
 		placing = false;
