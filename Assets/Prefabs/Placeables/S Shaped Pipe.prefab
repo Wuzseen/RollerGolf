@@ -282,7 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collideClip: {fileID: 8300000, guid: eaf960fdf81c242eda4cd0a85c6174a7, type: 3}
   other: {fileID: 443518}
-  slowDownFactor: .5
+  launchVelocity: 8
 --- !u!114 &11463092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collideClip: {fileID: 8300000, guid: eaf960fdf81c242eda4cd0a85c6174a7, type: 3}
   other: {fileID: 424004}
-  slowDownFactor: .5
+  launchVelocity: 8
 --- !u!114 &11493822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901d4f838fb994f4080a02e477c27ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationDegree: 10
+  rotationDegree: 25
   placing: 0
   keepUpright: 0
 --- !u!212 &21217034
@@ -356,6 +356,10 @@ Prefab:
       propertyPath: collideClip
       value: 
       objectReference: {fileID: 8300000, guid: eaf960fdf81c242eda4cd0a85c6174a7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: rotationDegree
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 163256}

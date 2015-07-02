@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901d4f838fb994f4080a02e477c27ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationDegree: 10
+  rotationDegree: 25
   placing: 0
   keepUpright: 1
 --- !u!212 &21285452
@@ -145,6 +145,10 @@ Prefab:
       propertyPath: collideClip
       value: 
       objectReference: {fileID: 8300000, guid: d89fe855d5e044bdf935232d4988260b, type: 3}
+    - target: {fileID: 0}
+      propertyPath: rotationDegree
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125224}
