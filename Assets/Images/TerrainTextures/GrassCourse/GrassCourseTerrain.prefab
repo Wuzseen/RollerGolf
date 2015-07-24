@@ -44,12 +44,12 @@ MonoBehaviour:
   descriptors:
   - applyTo: 0
     zOffset: 0
-    yOffset: 0
+    yOffset: .300000012
     leftCap:
       serializedVersion: 2
-      x: .01953125
-      y: .013671875
-      width: .107011721
+      x: .017578125
+      y: .54296875
+      width: .125
       height: .228515625
     innerLeftCap:
       serializedVersion: 2
@@ -59,9 +59,9 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: .471269548
-      y: .013671875
-      width: .107011721
+      x: .427734375
+      y: .54296875
+      width: .125
       height: .228515625
     innerRightCap:
       serializedVersion: 2
@@ -71,20 +71,25 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: .126542971
-      y: .013671875
-      width: .344726592
+      x: .142578125
+      y: .54296875
+      width: .142578125
+      height: .228515625
+    - serializedVersion: 2
+      x: .28515625
+      y: .54296875
+      width: .142578125
       height: .228515625
     capOffset: 0
-  - applyTo: 0
-    zOffset: 0
-    yOffset: 0
+  - applyTo: 1
+    zOffset: .100000001
+    yOffset: .230000004
     leftCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .134765625
+      y: .12109375
+      width: .055253908
+      height: .166015625
     innerLeftCap:
       serializedVersion: 2
       x: 0
@@ -93,10 +98,10 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .383378923
+      y: .12109375
+      width: .055253908
+      height: .166015625
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -105,20 +110,20 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: 0
-      y: 0
-      width: 50
-      height: 50
+      x: .190019533
+      y: .12109375
+      width: .193359405
+      height: .166015625
     capOffset: 0
-  - applyTo: 0
-    zOffset: 0
-    yOffset: 0
+  - applyTo: 2
+    zOffset: .100000001
+    yOffset: .340000004
     leftCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .134765625
+      y: .12109375
+      width: .125
+      height: .166015625
     innerLeftCap:
       serializedVersion: 2
       x: 0
@@ -127,10 +132,10 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .31640625
+      y: .12109375
+      width: .125
+      height: .166015625
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -139,10 +144,10 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: 0
-      y: 0
-      width: .09765625
-      height: .09765625
+      x: .259765625
+      y: .12109375
+      width: .056640625
+      height: .166015625
     capOffset: 0
   - applyTo: 0
     zOffset: 0
@@ -188,15 +193,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].capOffset
-      value: 80.3799973
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].yOffset
-      value: -.109999999
+      value: .300000012
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].zOffset
@@ -204,7 +209,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].leftCap.width
-      value: .107011721
+      value: .125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].leftCap.height
@@ -212,11 +217,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.x
-      value: .471269548
+      value: .427734375
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.width
-      value: .107011721
+      value: .125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.height
@@ -224,31 +229,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].x
-      value: .126542971
+      value: .1328125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].width
-      value: .344726592
+      value: .142578125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].x
-      value: .313484877
+      value: .28515625
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].width
-      value: .187527835
+      value: .142578125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[2].x
-      value: .501012683
+      value: .146577567
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[2].width
-      value: .187527835
+      value: .00730245467
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].y
-      value: .013671875
+      value: .54296875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].height
@@ -256,11 +261,679 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[2].y
-      value: .013671875
+      value: .6171875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[2].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].leftCap.y
+      value: .548828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].rightCap.y
+      value: .548828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[0].y
+      value: .548828125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].leftCap.x
+      value: .0078125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[0].height
       value: .228515625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].applyTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].body.Array.data[0].width
+      value: .193359405
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].body.Array.data[0].height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].body.Array.data[0].x
+      value: .190019533
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].capOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].body.Array.data[0].y
+      value: .12109375
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].leftCap.width
+      value: .055253908
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].leftCap.height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[3].x
+      value: .153880015
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[3].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[4].x
+      value: .161182463
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[4].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[5].x
+      value: .168484911
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[5].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[6].x
+      value: .175787359
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[6].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[7].x
+      value: .183089808
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[7].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[8].x
+      value: .190392256
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[8].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[9].x
+      value: .197694704
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[9].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[10].x
+      value: .204997152
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[10].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[11].x
+      value: .2122996
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[11].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[12].x
+      value: .219602048
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[12].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[13].x
+      value: .226904497
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[13].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[14].x
+      value: .234206945
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[14].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[15].x
+      value: .241509393
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[15].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[16].x
+      value: .248811841
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[16].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[17].x
+      value: .256114304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[17].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[18].x
+      value: .263416767
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[18].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[19].x
+      value: .27071923
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[19].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[20].x
+      value: .278021693
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[20].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[21].x
+      value: .285324156
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[21].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[22].x
+      value: .292626619
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[22].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[23].x
+      value: .299929082
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[23].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[24].x
+      value: .307231545
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[24].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[25].x
+      value: .314534009
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[25].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[26].x
+      value: .321836472
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[26].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[27].x
+      value: .329138935
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[27].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[28].x
+      value: .336441398
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[28].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[28].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[28].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[29].x
+      value: .343743861
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[29].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[29].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[29].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[30].x
+      value: .351046324
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[30].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[30].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[30].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[31].x
+      value: .358348787
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[31].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[32].x
+      value: .36565125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[32].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[33].x
+      value: .372953713
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[33].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[34].x
+      value: .380256176
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[34].width
+      value: .00730245467
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[3].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[3].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[4].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[4].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[5].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[5].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[6].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[6].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[7].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[7].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[8].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[8].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[9].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[9].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[10].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[10].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[11].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[11].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[12].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[12].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[13].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[13].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[14].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[14].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[15].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[15].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[16].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[16].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[17].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[17].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[18].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[18].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[19].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[19].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[20].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[20].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[21].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[21].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[22].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[22].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[23].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[23].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[24].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[24].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[25].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[25].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[26].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[26].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[27].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[27].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[31].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[31].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[32].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[32].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[33].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[33].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[34].y
+      value: .6171875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[0].body.Array.data[34].height
+      value: .20703125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].innerLeftCap.width
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].innerLeftCap.height
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].leftCap.x
+      value: .134765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].leftCap.y
+      value: .12109375
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].rightCap.x
+      value: .383378923
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].rightCap.y
+      value: .12109375
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].rightCap.width
+      value: .055253908
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].rightCap.height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].yOffset
+      value: .230000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[1].zOffset
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].applyTo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].rightCap.x
+      value: .31640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].body.Array.data[0].width
+      value: .056640625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].body.Array.data[0].height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].zOffset
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].yOffset
+      value: .340000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].leftCap.x
+      value: .134765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].body.Array.data[0].x
+      value: .259765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].leftCap.y
+      value: .126953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].rightCap.y
+      value: .126953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].body.Array.data[0].y
+      value: .126953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].leftCap.width
+      value: .125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].leftCap.height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].rightCap.width
+      value: .125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].rightCap.height
+      value: .166015625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[2].capOffset
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

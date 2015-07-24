@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 7ae55925f28e2c84a8143bc8ff330fee, type: 3}
+          m_Texture: {fileID: 2800000, guid: 619e44bec3f2b9a43a1827d8eba0fc35, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -93,6 +93,22 @@ Material:
         second: .5
       data:
         first:
+          name: _WaveSpeed
+        second: 4
+      data:
+        first:
+          name: _PositionScale
+        second: 4
+      data:
+        first:
+          name: _WaveSizeX
+        second: .25
+      data:
+        first:
+          name: _WaveSizeY
+        second: .25
+      data:
+        first:
           name: _Parallax
         second: .0199999996
       data:
@@ -127,22 +143,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _WaveSpeed
-        second: 4
-      data:
-        first:
-          name: _PositionScale
-        second: 4
-      data:
-        first:
-          name: _WaveSizeX
-        second: .25
-      data:
-        first:
-          name: _WaveSizeY
-        second: .25
     m_Colors:
       data:
         first:
