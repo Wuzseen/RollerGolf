@@ -80,7 +80,7 @@ MonoBehaviour:
       y: .830078125
       width: .142578125
       height: .08203125
-    capOffset: 0
+    capOffset: -.379999995
   - applyTo: 1
     zOffset: .100000001
     yOffset: .230000004
@@ -120,10 +120,10 @@ MonoBehaviour:
     yOffset: .340000004
     leftCap:
       serializedVersion: 2
-      x: .134765625
+      x: .169921875
       y: .12109375
-      width: .125
-      height: .166015625
+      width: 0
+      height: 0
     innerLeftCap:
       serializedVersion: 2
       x: 0
@@ -132,10 +132,10 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: .31640625
+      x: .371093661
       y: .12109375
-      width: .125
-      height: .166015625
+      width: 0
+      height: 0
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -144,9 +144,9 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: .259765625
+      x: .169921875
       y: .12109375
-      width: .056640625
+      width: .201171786
       height: .166015625
     capOffset: 0
   - applyTo: 3
@@ -206,7 +206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].capOffset
-      value: 0
+      value: -.379999995
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].yOffset
@@ -886,11 +886,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].rightCap.x
-      value: .31640625
+      value: .371093661
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].body.Array.data[0].width
-      value: .056640625
+      value: .201171786
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].body.Array.data[0].height
@@ -906,11 +906,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].leftCap.x
-      value: .134765625
+      value: .169921875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].body.Array.data[0].x
-      value: .259765625
+      value: .169921875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].leftCap.y
@@ -926,19 +926,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].leftCap.width
-      value: .125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].leftCap.height
-      value: .166015625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].rightCap.width
-      value: .125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].rightCap.height
-      value: .166015625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].capOffset

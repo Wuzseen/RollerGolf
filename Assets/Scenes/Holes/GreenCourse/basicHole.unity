@@ -1116,9 +1116,9 @@ GameObject:
   - 23: {fileID: 2133672295}
   - 33: {fileID: 2133672294}
   - 114: {fileID: 2133672293}
-  m_Layer: 0
-  m_Name: New Terrain
-  m_TagString: Untagged
+  m_Layer: 8
+  m_Name: LevelTerrain
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
