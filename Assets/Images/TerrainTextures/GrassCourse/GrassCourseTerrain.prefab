@@ -44,13 +44,13 @@ MonoBehaviour:
   descriptors:
   - applyTo: 0
     zOffset: 0
-    yOffset: .300000012
+    yOffset: .109999999
     leftCap:
       serializedVersion: 2
       x: .017578125
-      y: .54296875
+      y: .830078125
       width: .125
-      height: .228515625
+      height: .08203125
     innerLeftCap:
       serializedVersion: 2
       x: 0
@@ -60,9 +60,9 @@ MonoBehaviour:
     rightCap:
       serializedVersion: 2
       x: .427734375
-      y: .54296875
+      y: .830078125
       width: .125
-      height: .228515625
+      height: .08203125
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -72,14 +72,14 @@ MonoBehaviour:
     body:
     - serializedVersion: 2
       x: .142578125
-      y: .54296875
+      y: .830078125
       width: .142578125
-      height: .228515625
+      height: .08203125
     - serializedVersion: 2
       x: .28515625
-      y: .54296875
+      y: .830078125
       width: .142578125
-      height: .228515625
+      height: .08203125
     capOffset: 0
   - applyTo: 1
     zOffset: .100000001
@@ -149,15 +149,15 @@ MonoBehaviour:
       width: .056640625
       height: .166015625
     capOffset: 0
-  - applyTo: 0
+  - applyTo: 3
     zOffset: 0
-    yOffset: 0
+    yOffset: .300000012
     leftCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .017578125
+      y: .54296875
+      width: .125
+      height: .228144526
     innerLeftCap:
       serializedVersion: 2
       x: 0
@@ -166,10 +166,10 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
+      x: .427734375
+      y: .54296875
+      width: .125
+      height: .228144526
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -178,10 +178,15 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: 0
-      y: 0
-      width: .09765625
-      height: .09765625
+      x: .142578125
+      y: .54296875
+      width: .142578125
+      height: .228144526
+    - serializedVersion: 2
+      x: .28515625
+      y: .54296875
+      width: .142578125
+      height: .228144526
     capOffset: 0
   isPixel: 0
 --- !u!1001 &100100000
@@ -196,12 +201,16 @@ Prefab:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].capOffset
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].yOffset
-      value: .300000012
+      value: .109999999
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].zOffset
@@ -213,7 +222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].leftCap.height
-      value: .228515625
+      value: .08203125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.x
@@ -225,11 +234,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.height
-      value: .228515625
+      value: .08203125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].x
-      value: .1328125
+      value: .142578125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].width
@@ -253,11 +262,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].y
-      value: .54296875
+      value: .830078125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[1].height
-      value: .228515625
+      value: .08203125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[2].y
@@ -269,23 +278,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].leftCap.y
-      value: .548828125
+      value: .830078125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].rightCap.y
-      value: .548828125
+      value: .830078125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].y
-      value: .548828125
+      value: .830078125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].leftCap.x
-      value: .0078125
+      value: .017578125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[0].body.Array.data[0].height
-      value: .228515625
+      value: .08203125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[1].applyTo
@@ -934,6 +943,70 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: descriptors.Array.data[2].capOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].applyTo
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].rightCap.x
+      value: .419921875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[0].width
+      value: .142578125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[0].height
+      value: .228144526
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].yOffset
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].leftCap.x
+      value: .009765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[0].x
+      value: .134765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].leftCap.y
+      value: .767578125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].rightCap.y
+      value: .767578125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[0].y
+      value: .767578125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].leftCap.width
+      value: .125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].leftCap.height
+      value: .228144526
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].rightCap.width
+      value: .125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].rightCap.height
+      value: .228144526
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[1].y
+      value: .767578125
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: descriptors.Array.data[3].body.Array.data[1].x
+      value: .27734375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
